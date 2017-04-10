@@ -38,3 +38,17 @@ def merge1(a,b):
     c = sorted(a)
     print(c)
     return c
+
+
+def merge3(a,b):
+    c = []
+
+    while a and b:
+        if a[0] < b[0]:
+            c.append(a.pop(0))
+        else:
+            c.append(b.pop(0))
+
+    # either a or b can be not empty
+    print (c + a + b)
+    return c + a + b
