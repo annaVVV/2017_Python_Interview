@@ -95,3 +95,9 @@ print sample_url[::-1]
 
 print 'Reverse the list:',
 print nums[::-1]
+
+print 'Reverse the url:',
+print sample_url[::-1]
+
+print 'Reverse the list:',
+print nums[::-1]
