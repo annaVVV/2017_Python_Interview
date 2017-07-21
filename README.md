@@ -6,7 +6,7 @@ List of codes for interview Q & A
 2.	Get word frequency - initializing dictionary
 3.	Initializing dictionary with list
 4.	map, filter, and reduce
-5.	Write a function f() - yield
+5.	Get prime numbers in range to 100,  yield
 6.	What is __init__.py?
 7.	Build a string with the numbers from 0 to 100, "0123456789101112..."
 8.	Basic file processing: Printing contents of a file - "with open"
