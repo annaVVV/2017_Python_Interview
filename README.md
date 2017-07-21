@@ -18,7 +18,7 @@ List of codes for interview Q & A
 14.	Generators
 15.	Manipulating functions as first-class objects
 16.	docstrings vs comments
-17.	using lambdda
+17.	using lambda
 18.	classmethod vs staticmethod
 19.	Making a list with unique element from a list with duplicate elements
 20.	What is map?
