@@ -1,4 +1,4 @@
-# grep 'pass' /home/anna/test*_folder/log*.txt
+# grep 'pass' /test/test*_folder/log*.txt
 # Search for all files which have word "pass"
 #
 # /home/test/test_folder/log1.txt
