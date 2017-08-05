@@ -5,9 +5,7 @@ my_list = []
 # for n in nums:
 #   my_list.append(n)
 # print my_list
-
 print [n for n in nums]
-
 
 # I want 'n*n' for each 'n' in nums
 # my_list = []
@@ -27,10 +25,9 @@ my_list = [n for n in nums if n%2==0]
 #   if n%2 == 0:
 #     my_list.append(n)
 print my_list
-
 # Using a filter + lambda
-# my_list = filter(lambda n: n%2 == 0, nums)
-# print my_list
+my_list = filter(lambda n: n%2 == 0, nums)
+print my_list
 
 # I want a (letter, num) pair for each letter in 'abcd' and each number in '0123'
 # my_list = []
@@ -39,6 +36,7 @@ print my_list
 #     my_list.append((letter,num))
 # print my_list
 print [(a, n) for a in 'abcd' for n in '0123']
+
 # Dictionary Comprehensions
 names = ['Bruce', 'Clark', 'Peter', 'Logan', 'Wade']
 heros = ['Batman', 'Superman', 'Spiderman', 'Wolverine', 'Deadpool']
@@ -89,12 +87,6 @@ print_p('Test Paragraph!')
 
 sample_url = 'http://coreyms.com'
 print sample_url
-
-print 'Reverse the url:',
-print sample_url[::-1]
-
-print 'Reverse the list:',
-print nums[::-1]
 
 print 'Reverse the url:',
 print sample_url[::-1]
