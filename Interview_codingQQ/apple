@@ -1,0 +1,37 @@
+"""
+Find sum of all numbers in the string 'sdf2tg dff234hh d999njk1hj'
+sum = 1236 (2 + 234 + 999 + 1)
+"""
+
+# Solution 1
+str = 'sdf2tg dff234hh d999njk1hj'
+
+print 'Input:', str
+sum = 0
+i = 0
+l = len(str)
+n = ''
+while i < l:
+     if str[i].isdigit():
+         n += str[i]
+     elif len(n) > 0:
+         sum = sum + int(n)
+         n = ''
+     i += 1
+print sum, (2 + 234 + 999 + 1)
+
+# Solution 2
+import re
+regex = r"[a-zA-Z]?(\d+)"
+matches = re.findall(regex, str)
+s = 0
+for match in matches:
+    print match,
+    s += int(match)
+print '\nsum =', s
+
+# Output:
+# Input: sdf2tg dff234hh d999njk1hj
+# 1236 1236
+# 2 234 999 1 
+# sum = 1236
