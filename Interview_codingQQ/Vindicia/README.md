@@ -38,7 +38,7 @@ $ python display_processes_hierarchy.py > output
 
 * Script **display_processes_hierarchy.py**  reads data from fle: **input**
 * **keys**: a list with data table headers
-* **rows**: a list with with all data *rows [PID, PPID, COMMAND]*
+* **rows**: a list with all data *rows [PID, PPID, COMMAND]*
 * **nodes**: a dictionary with **PID** as **keys** and **value** as a **Node** instance created for each command (see *class* **Node**)
 * Method **walk(node, pref)** recursively prints all commands hierarchy 
 * Result file: **output**
