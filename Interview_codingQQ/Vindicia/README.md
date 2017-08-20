@@ -42,3 +42,5 @@ $ python display_processes_hierarchy.py > output
 * **nodes**: a dictionary with **PID** as **keys** and **value** as a **Node** instance created for each command (see *class* **Node**)
 * Method **walk(node, pref)** recursively prints all commands hierarchy 
 * Result file: **output**
+
+**Note**: vertical lines will be implemented later
