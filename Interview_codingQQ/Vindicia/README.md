@@ -31,7 +31,7 @@ cases it should...
 
 IMPLEMENTED
 ------------
-* Run from cmd:
+* Run from terminal:
 ```
 $ python ps_hierarchy.py > output     
 ```
