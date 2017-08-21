@@ -26,11 +26,12 @@ def walk(node, pref):
     count_chilren = node.count_children()
     if count_chilren==0:
         return
-
-    #if count_chilren > 1:
+    line = 0
+    if count_chilren > 1:
+        line = 1
     for c in node.children:
         print "{: >5} ".format(c.pid), pref + '\_', c.name
-        walk(c, '   ' + pref)
+        walk(c, pref + '|'*line + '   ' )
 
 def cmd_exec(cmd):
     p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
