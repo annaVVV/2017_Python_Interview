@@ -46,8 +46,6 @@ def cmd_exec(cmd):
 #  return: dictionary with keys as PID , value as Node
 def get_dict(file_name):
     file = open(file_name)
-    # str = file.read()
-    # data = str.split('\n')
     data, rows = [], []
     for row in file:
         data.append(row)
@@ -74,7 +72,7 @@ def get_dict(file_name):
 
 def main():
 
-    # Execute command: "ps -e l" put output into file "ps_table"
+    # Execute command "ps -e l" save output into file "in_file"
     command = "ps -e l"
     #command = "dir"  # test on windows cmd_exec
     command_out_file = 'in_file'
