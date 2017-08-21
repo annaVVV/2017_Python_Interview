@@ -12,45 +12,45 @@
  2903  \_ iscsid
  2904  \_ iscsid
  2959  \_ /usr/sbin/gdm-binary
- 2961     \_ /usr/sbin/gdm-binary
- 2969        \_ /usr/X11R6/bin/X :0 -audit 0 -auth /var/gdm/:0.Xauth -nolisten tcp vt7
- 3299        \_ /usr/libexec/gdmgreeter
+ 2961  |   \_ /usr/sbin/gdm-binary
+ 2969  |      \_ /usr/X11R6/bin/X :0 -audit 0 -auth /var/gdm/:0.Xauth -nolisten tcp vt7
+ 3299  |      \_ /usr/libexec/gdmgreeter
  3066  \_ /usr/sbin/sshd
- 5042     \_ sshd: paul [priv]
- 5044        \_ sshd: paul@pts/0 
- 5045           \_ -bash
- 5106     \_ sshd: paul [priv]
- 5108        \_ sshd: paul@pts/1 
- 5109           \_ -bash
- 5477              \_ /bin/bash /home/paul/bin/orasql.devdb2_paul_3232
- 5478                 \_ /usr/local/oracle/product/10.2.0/client_1/bin/sqlplus                                              
- 5167     \_ sshd: paul [priv]
- 5169        \_ sshd: paul@pts/2 
- 5170           \_ -bash
- 5230     \_ sshd: paul [priv]
- 5232        \_ sshd: paul@pts/3 
- 5233           \_ -bash
- 5291     \_ sshd: paul [priv]
- 5293        \_ sshd: paul@pts/4 
- 5294           \_ -bash
- 5352     \_ sshd: paul [priv]
- 5354        \_ sshd: paul@pts/5 
- 5355           \_ -bash
- 5413     \_ sshd: paul [priv]
- 5415        \_ sshd: paul@pts/6 
- 5416           \_ -bash
- 7260     \_ sshd: paul [priv]
- 7262        \_ sshd: paul@pts/7 
- 7263           \_ -bash
- 7321     \_ sshd: paul [priv]
- 7323        \_ sshd: paul@pts/8 
- 7324           \_ -bash
- 7382              \_ /bin/bash /home/paul/bin/orasql.prod
- 7383                 \_ /usr/local/oracle/product/10.2.0/client_1/bin/sqlplus                                                           
-18119     \_ sshd: paul [priv]
-18121        \_ sshd: paul@pts/9 
-18122           \_ -bash
-18182              \_ ps -e l
+ 5042  |   \_ sshd: paul [priv]
+ 5044  |   |   \_ sshd: paul@pts/0 
+ 5045  |   |      \_ -bash
+ 5106  |   \_ sshd: paul [priv]
+ 5108  |   |   \_ sshd: paul@pts/1 
+ 5109  |   |      \_ -bash
+ 5477  |   |         \_ /bin/bash /home/paul/bin/orasql.devdb2_paul_3232
+ 5478  |   |            \_ /usr/local/oracle/product/10.2.0/client_1/bin/sqlplus                                              
+ 5167  |   \_ sshd: paul [priv]
+ 5169  |   |   \_ sshd: paul@pts/2 
+ 5170  |   |      \_ -bash
+ 5230  |   \_ sshd: paul [priv]
+ 5232  |   |   \_ sshd: paul@pts/3 
+ 5233  |   |      \_ -bash
+ 5291  |   \_ sshd: paul [priv]
+ 5293  |   |   \_ sshd: paul@pts/4 
+ 5294  |   |      \_ -bash
+ 5352  |   \_ sshd: paul [priv]
+ 5354  |   |   \_ sshd: paul@pts/5 
+ 5355  |   |      \_ -bash
+ 5413  |   \_ sshd: paul [priv]
+ 5415  |   |   \_ sshd: paul@pts/6 
+ 5416  |   |      \_ -bash
+ 7260  |   \_ sshd: paul [priv]
+ 7262  |   |   \_ sshd: paul@pts/7 
+ 7263  |   |      \_ -bash
+ 7321  |   \_ sshd: paul [priv]
+ 7323  |   |   \_ sshd: paul@pts/8 
+ 7324  |   |      \_ -bash
+ 7382  |   |         \_ /bin/bash /home/paul/bin/orasql.prod
+ 7383  |   |            \_ /usr/local/oracle/product/10.2.0/client_1/bin/sqlplus                                                           
+18119  |   \_ sshd: paul [priv]
+18121  |      \_ sshd: paul@pts/9 
+18122  |         \_ -bash
+18182  |            \_ ps -e l
  3165  \_ /usr/sbin/automount /misc file /etc/auto.misc
  3203  \_ /usr/sbin/automount /net program /etc/auto.net
  3221  \_ nifd -n
@@ -66,15 +66,15 @@
  4679  \_ sendmail: accepting connections
  4686  \_ sendmail: Queue runner@01:00:00 for /var/spool/clientmqueue
  4702  \_ rmake server unix:///var/lib/rmake/socket      
- 4704     \_ /usr/bin/python2.4 /usr/lib/python2.4/site-packages/conary/server/server.py --config-file /srv/rmake/repos/serverrc
- 4706     \_ /usr/bin/python2.4 /usr/lib/python2.4/site-packages/conary/server/server.py --config-file /srv/rmake/proxy/serverrc
+ 4704  |   \_ /usr/bin/python2.4 /usr/lib/python2.4/site-packages/conary/server/server.py --config-file /srv/rmake/repos/serverrc
+ 4706  |   \_ /usr/bin/python2.4 /usr/lib/python2.4/site-packages/conary/server/server.py --config-file /srv/rmake/proxy/serverrc
  4726  \_ gpm -m /dev/input/mice -t imps2
  4734  \_ crond
  4749  \_ /usr/sbin/atd
  4757  \_ hald
- 4758     \_ hald-runner
- 4764        \_ /usr/libexec/hald-addon-acpi
- 4781        \_ /usr/libexec/hald-addon-storage
+ 4758  |   \_ hald-runner
+ 4764  |      \_ /usr/libexec/hald-addon-acpi
+ 4781  |      \_ /usr/libexec/hald-addon-storage
  4793  \_ /sbin/mingetty tty1
  4794  \_ /sbin/mingetty tty2
  4814  \_ /sbin/mingetty tty3
