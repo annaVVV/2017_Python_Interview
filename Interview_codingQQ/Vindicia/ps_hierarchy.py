@@ -6,8 +6,7 @@ class Node:
         self.pid = pid
         self.ppid = ppid
         self.children = []
-        # if parent:
-        #     self.parent.children.append(self)
+
     def add_child(self, child):
         self.children.append(child)
 
@@ -84,12 +83,10 @@ def main():
 
     # Execute command "ps -e l" save output into file "in_file"
     command = "ps -e l"
-    #command = "dir"  # test on windows cmd_exec
     command_out_file = 'in_file'
-    cmd_exec( command + " > " + command_out_file)
+    cmd_exec( command + " > " + command_out_file) # temp file
 
     # Parse the command output columns (PID, PPID, COMMAND) and return a dictionary with keys as PID , value as Node
-    #nodes = get_dict('input') # to test on Windows
     nodes = get_dict(command_out_file)
 
     # Display the hierarchy of processes on a Linux computer
