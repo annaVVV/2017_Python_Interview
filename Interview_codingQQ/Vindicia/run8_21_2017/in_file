@@ -1,0 +1,164 @@
+F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
+4     0     1     0  20   0   4456  3584 poll_s Ss   ?          0:04 /sbin/init
+1     0     2     0  20   0      0     0 kthrea S    ?          0:00 [kthreadd]
+1     0     3     2  20   0      0     0 smpboo S    ?          0:00 [ksoftirqd/0]
+1     0     4     2  20   0      0     0 worker S    ?          0:00 [kworker/0:0]
+1     0     5     2   0 -20      0     0 worker S<   ?          0:00 [kworker/0:0H]
+1     0     6     2  20   0      0     0 worker S    ?          0:00 [kworker/u2:0]
+1     0     7     2  20   0      0     0 rcu_gp S    ?          0:01 [rcu_sched]
+1     0     8     2  20   0      0     0 rcu_gp S    ?          0:00 [rcu_bh]
+1     0     9     2 -100  -      0     0 smpboo S    ?          0:00 [migration/0]
+5     0    10     2 -100  -      0     0 smpboo S    ?          0:00 [watchdog/0]
+1     0    11     2   0 -20      0     0 rescue S<   ?          0:00 [khelper]
+5     0    12     2  20   0      0     0 devtmp S    ?          0:00 [kdevtmpfs]
+1     0    13     2   0 -20      0     0 rescue S<   ?          0:00 [netns]
+1     0    14     2  20   0      0     0 watchd S    ?          0:00 [khungtaskd]
+1     0    15     2   0 -20      0     0 rescue S<   ?          0:00 [writeback]
+1     0    16     2  25   5      0     0 ksm_sc SN   ?          0:00 [ksmd]
+1     0    17     2  39  19      0     0 khugep SN   ?          0:00 [khugepaged]
+1     0    18     2   0 -20      0     0 rescue S<   ?          0:00 [crypto]
+1     0    19     2   0 -20      0     0 rescue S<   ?          0:00 [kintegrityd]
+1     0    20     2   0 -20      0     0 rescue S<   ?          0:00 [bioset]
+1     0    21     2   0 -20      0     0 rescue S<   ?          0:00 [kblockd]
+1     0    22     2   0 -20      0     0 rescue S<   ?          0:00 [ata_sff]
+1     0    23     2  20   0      0     0 hub_th S    ?          0:00 [khubd]
+1     0    24     2   0 -20      0     0 rescue S<   ?          0:00 [md]
+1     0    25     2   0 -20      0     0 rescue S<   ?          0:00 [devfreq_wq]
+1     0    26     2  20   0      0     0 worker S    ?          0:00 [kworker/u2:1]
+1     0    27     2  20   0      0     0 worker S    ?          0:00 [kworker/0:1]
+1     0    28     2  20   0      0     0 kswapd S    ?          0:00 [kswapd0]
+1     0    29     2  20   0      0     0 fsnoti S    ?          0:00 [fsnotify_mark]
+1     0    30     2  20   0      0     0 ecrypt S    ?          0:00 [ecryptfs-kthrea]
+1     0    42     2   0 -20      0     0 rescue S<   ?          0:00 [kthrotld]
+1     0    43     2   0 -20      0     0 rescue S<   ?          0:00 [acpi_thermal_pm]
+1     0    45     2  20   0      0     0 scsi_e S    ?          0:00 [scsi_eh_0]
+1     0    46     2   0 -20      0     0 rescue S<   ?          0:00 [scsi_tmf_0]
+1     0    47     2  20   0      0     0 scsi_e S    ?          0:00 [scsi_eh_1]
+1     0    48     2   0 -20      0     0 rescue S<   ?          0:00 [scsi_tmf_1]
+1     0    50     2   0 -20      0     0 rescue S<   ?          0:00 [ipv6_addrconf]
+1     0    70     2   0 -20      0     0 rescue S<   ?          0:00 [deferwq]
+1     0    71     2   0 -20      0     0 rescue S<   ?          0:00 [charger_manager]
+1     0   117     2   0 -20      0     0 rescue S<   ?          0:00 [kpsmoused]
+1     0   118     2  20   0      0     0 scsi_e S    ?          0:00 [scsi_eh_2]
+1     0   119     2   0 -20      0     0 rescue S<   ?          0:00 [scsi_tmf_2]
+1     0   129     2   0 -20      0     0 worker S<   ?          0:00 [kworker/0:1H]
+1     0   130     2  20   0      0     0 kjourn S    ?          0:00 [jbd2/sda1-8]
+1     0   131     2   0 -20      0     0 rescue S<   ?          0:00 [ext4-rsv-conver]
+1     0   300     1  20   0   3020  2128 poll_s S    ?          0:00 upstart-udev-bridge --daemon
+5     0   318     1  20   0  12492  3468 ep_pol Ss   ?          0:00 /lib/systemd/systemd-udevd --daemon
+5   102   403     1  20   0   4932  3240 ep_pol Ss   ?          0:00 dbus-daemon --system --fork
+1     0   415     2   0 -20      0     0 rescue S<   ?          0:00 [iprt]
+5     0   437     1  20   0   4888  2416 poll_s Ss   ?          0:00 /usr/sbin/bluetoothd
+4     0   453     1  20   0   4224  3056 ep_pol Ss   ?          0:00 /lib/systemd/systemd-logind
+5     0   461     2  10 -10      0     0 rfcomm S<   ?          0:00 [krfcommd]
+5   101   464     1  20   0  30488  2688 poll_s Ssl  ?          0:00 rsyslogd
+4     0   481     1  20   0   8312  5916 ep_pol Ss   ?          0:00 /usr/sbin/cupsd -f
+1     0   541     1  20   0   3160  1928 poll_s S    ?          0:00 upstart-file-bridge --daemon
+1     0   565     1  20   0   2880   184 poll_s S    ?          0:00 upstart-socket-bridge --daemon
+4     0   576     1  20   0   8864  4960 poll_s Ss   ?          0:00 /usr/sbin/cups-browsed
+4     0   609     1  20   0  37388  6956 poll_s Ssl  ?          0:00 /usr/sbin/ModemManager
+5     0   659     1  20   0  53432 14592 poll_s Ssl  ?          0:00 NetworkManager
+4     0   672     1  20   0  36812 10032 poll_s Sl   ?          0:00 /usr/lib/policykit-1/polkitd --no-debug
+4     0   701   659  20   0   5524  4548 poll_s S    ?          0:00 /sbin/dhclient -d -sf /usr/lib/NetworkManager/nm-dhcp-client.action -pf /run/sendsigs.omit.d/network-manager.dhclient-eth0.pid -lf /var/lib/NetworkManager/dhclient-de51694c-05c0-4320-978a-5bbe95378a46-eth0.lease -cf /var/lib/NetworkManager/dhclient-eth0.conf eth0
+4     0   758     1  20   0   4656  1988 n_tty_ Ss+  tty4       0:00 /sbin/getty -8 38400 tty4
+4     0   762     1  20   0   4656  2040 n_tty_ Ss+  tty5       0:00 /sbin/getty -8 38400 tty5
+4 65534   767   659  20   0   5560  3048 poll_s S    ?          0:00 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/run/sendsigs.omit.d/network-manager.dnsmasq.pid --listen-address=127.0.1.1 --conf-file=/var/run/NetworkManager/dnsmasq.conf --cache-size=0 --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
+4     0   768     1  20   0   4656  1996 n_tty_ Ss+  tty2       0:00 /sbin/getty -8 38400 tty2
+4     0   769     1  20   0   4656  1884 n_tty_ Ss+  tty3       0:00 /sbin/getty -8 38400 tty3
+4     0   773     1  20   0   4656  1972 n_tty_ Ss+  tty6       0:00 /sbin/getty -8 38400 tty6
+1     0   803     1  20   0   2204  1496 poll_s Ss   ?          0:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+1     0   808     1  20   0   3064  2240 hrtime Ss   ?          0:00 cron
+1   106   832     1  20   0   6396   228 poll_s Ss   ?          0:00 /usr/sbin/kerneloops
+1   109   833     1  20   0  53020 10972 poll_s Ssl  ?          0:00 whoopsie
+4     0  1157     1  20   0  35776  8848 poll_s Ssl  ?          0:00 lightdm
+4     0  1188     1  20   0  36996  9480 poll_s Sl   ?          0:00 /usr/lib/accountsservice/accounts-daemon
+1     0  1213     1  20   0  25948  1640 sigtim Sl   ?          0:00 /usr/sbin/VBoxService
+5   111  1228     1  20   0   3484  2668 poll_s S    ?          0:00 avahi-daemon: running [anna-VirtualBox.local]
+1   111  1229  1228  20   0   3484   224 unix_s S    ?          0:00 avahi-daemon: chroot helper
+4     7  1244   481  20   0   6956  3520 pipe_w S    ?          0:00 /usr/lib/cups/notifier/dbus dbus:// 
+4     7  1246   481  20   0   6956  3520 pipe_w S    ?          0:00 /usr/lib/cups/notifier/dbus dbus:// 
+4     0  1260  1157  20   0 156380 48160 ?      Rs+  tty7       0:26 /usr/bin/X -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+4     0  1287     1  20   0   4656  1964 n_tty_ Ss+  tty1       0:00 /sbin/getty -8 38400 tty1
+4     0  1297  1157  20   0  17824  5964 wait   Sl   ?          0:00 lightdm --session-child 12 15
+1     0  1300     2  20   0      0     0 kaudit S    ?          0:00 [kauditd]
+4  1000  1310  1297  20   0   6148  3776 poll_s Ss   ?          0:00 init --user
+1  1000  1401     1  20   0   3860  1868 poll_s S    ?          0:00 dbus-launch --autolaunch=f3b459bb480eac6a6debd0f8554b0b8c --binary-syntax --close-stderr
+1  1000  1404     1  20   0   4244   268 ep_pol Ss   ?          0:00 //bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+1  1000  1408     1  20   0  15660   268 wait   S    ?          0:00 /usr/bin/VBoxClient --clipboard
+1  1000  1409  1408  20   0  17356  3924 rtR0Se Sl   ?          0:00 /usr/bin/VBoxClient --clipboard
+1  1000  1418     1  20   0  15660   268 wait   S    ?          0:00 /usr/bin/VBoxClient --display
+1  1000  1419  1418  20   0  17344  3284 rtR0Se Sl   ?          0:00 /usr/bin/VBoxClient --display
+1  1000  1426     1  20   0  15660   264 wait   S    ?          0:00 /usr/bin/VBoxClient --seamless
+1  1000  1427  1426  20   0  17344  3024 rtR0Se Sl   ?          0:00 /usr/bin/VBoxClient --seamless
+1  1000  1431     1  20   0  15660   264 wait   S    ?          0:00 /usr/bin/VBoxClient --draganddrop
+1  1000  1435  1431  20   0  18004  3524 futex_ Sl   ?          0:00 /usr/bin/VBoxClient --draganddrop
+1  1000  1461  1310  20   0   4880  3032 ep_pol Ss   ?          0:00 dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-owlRXYUcik
+0  1000  1472  1310  20   0   4924  2248 poll_s Ss   ?          0:00 upstart-event-bridge
+0  1000  1478  1310  20   0  39464  7484 poll_s Ss   ?          0:00 /usr/lib/i386-linux-gnu/hud/window-stack-bridge
+5  1000  1486  1310  20   0  56608 12004 poll_s Sl   ?          0:00 gnome-keyring-daemon --start --components pkcs11,secrets
+1  1000  1502  1310  20   0   4928   152 poll_s S    ?          0:00 upstart-dbus-bridge --daemon --session --user --bus-name session
+1  1000  1503  1310  20   0   4928   156 poll_s S    ?          0:00 upstart-dbus-bridge --daemon --system --user --bus-name system
+1  1000  1504  1310  20   0   5208   224 poll_s S    ?          0:00 upstart-file-bridge --daemon --user
+0  1000  1510  1310  20   0 122916 25008 poll_s Sl   ?          0:00 /usr/lib/i386-linux-gnu/bamf/bamfdaemon
+1  1000  1516  1310  20   0  38420  7640 poll_s Ssl  ?          0:00 /usr/bin/ibus-daemon --daemonize --xim
+0  1000  1533  1310  20   0 208804 29556 poll_s Ssl  ?          0:01 /usr/lib/unity-settings-daemon/unity-settings-daemon
+0  1000  1534  1310  20   0  27764  5084 poll_s Sl   ?          0:00 /usr/lib/gvfs/gvfsd
+0  1000  1538  1310  20   0 115232 28936 poll_s Ssl  ?          0:00 /usr/lib/i386-linux-gnu/hud/hud-service
+0  1000  1544  1310  20   0  45292  9308 poll_s Ssl  ?          0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately
+0  1000  1547  1516  20   0  37868  7288 poll_s Sl   ?          0:00 /usr/lib/ibus/ibus-dconf
+0  1000  1548  1310  20   0  43960  9536 futex_ Sl   ?          0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+0  1000  1549  1516  20   0 116688 26384 poll_s Sl   ?          0:00 /usr/lib/ibus/ibus-ui-gtk3
+0  1000  1550  1310  20   0  70880 18244 poll_s Ssl  ?          0:00 gnome-session --session=ubuntu
+0  1000  1555  1310  20   0  50796 18124 poll_s Sl   ?          0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+0  1000  1558  1544  20   0   4376  3220 ep_pol S    ?          0:00 /bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+0  1000  1560  1310  20   0 117808 25808 poll_s Ssl  ?          0:00 /usr/lib/unity/unity-panel-service
+0  1000  1572  1310  20   0  17372  4636 poll_s Sl   ?          0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+4     0  1595     1  20   0  37804  6832 poll_s Sl   ?          0:00 /usr/lib/upower/upowerd
+0  1000  1635  1310  20   0 134056 24108 poll_s Sl   ?          0:00 /usr/lib/i386-linux-gnu/indicator-keyboard-service --use-gtk
+0  1000  1639  1310  20   0  45996  7072 poll_s Ssl  ?          0:00 /usr/lib/i386-linux-gnu/indicator-messages/indicator-messages-service
+0  1000  1644  1310  20   0  37884  7052 poll_s Ssl  ?          0:00 /usr/lib/i386-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+0  1000  1650  1310  20   0  37872  8984 poll_s Ssl  ?          0:00 /usr/lib/i386-linux-gnu/indicator-power/indicator-power-service
+0  1000  1664  1310  20   0 100304 13128 poll_s Ssl  ?          0:00 /usr/lib/i386-linux-gnu/indicator-datetime/indicator-datetime-service
+0  1000  1673  1310  20   0 117480 12172 poll_s Ssl  ?          0:00 /usr/lib/i386-linux-gnu/indicator-sound/indicator-sound-service
+0  1000  1674  1516  20   0  29588  7160 poll_s Sl   ?          0:00 /usr/lib/ibus/ibus-engine-simple
+0  1000  1676  1310  20   0  56776 18968 poll_s Ssl  ?          0:00 /usr/lib/i386-linux-gnu/indicator-printers/indicator-printers-service
+0  1000  1683  1310  20   0  62736  7488 poll_s Ssl  ?          0:00 /usr/lib/i386-linux-gnu/indicator-session/indicator-session-service
+0  1000  1688  1310  20   0  46580 11776 poll_s Ssl  ?          0:00 /usr/lib/i386-linux-gnu/indicator-application/indicator-application-service
+0  1000  1731  1310  20   0  64748 16288 poll_s Sl   ?          0:00 /usr/lib/evolution/evolution-source-registry
+1  1000  1735  1310   9 -11 100212  8568 poll_s S<l  ?          0:00 /usr/bin/pulseaudio --start --log-target=syslog
+4   107  1746     1  21   1  21372  2268 poll_s SNl  ?          0:00 /usr/lib/rtkit/rtkit-daemon
+0  1000  1782  1310  20   0  44832 19520 poll_s Sl   ?          0:00 /usr/lib/i386-linux-gnu/notify-osd
+1     0  1794     1  20   0   2424  1844 sigsus Ss   ?          0:00 anacron -s
+0  1000  1798  1550  20   0 330432 129388 poll_s Sl  ?          0:50 compiz
+0  1000  1868  1310  20   0 128692 40144 poll_s Sl   ?          0:00 /usr/lib/evolution/evolution-calendar-factory
+0  1000  1881  1310  20   0  24520  6592 poll_s Sl   ?          0:00 /usr/lib/dconf/dconf-service
+0  1000  1884  1550  20   0  44332 18496 poll_s Sl   ?          0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+0  1000  1887  1550  20   0  52348 15864 poll_s Sl   ?          0:00 /usr/lib/unity-settings-daemon/unity-fallback-mount-helper
+0  1000  1892  1550  20   0 190468 29236 poll_s Sl   ?          0:00 nm-applet
+0  1000  1898  1550  20   0 223160 36876 poll_s Sl   ?          0:01 nautilus -n
+0  1000  1919  1310  20   0  39192  8620 poll_s Sl   ?          0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+4     0  1928     1  20   0  53140  8116 poll_s Sl   ?          0:00 /usr/lib/udisks2/udisksd --no-debug
+0  1000  1950  1310  20   0  38352  5772 poll_s Sl   ?          0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+0  1000  1956  1310  20   0  27200  5008 poll_s Sl   ?          0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+0  1000  1961  1310  20   0  28312  7412 poll_s Sl   ?          0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+0  1000  1981  1310  20   0   9608  5368 poll_s S    ?          0:00 /usr/lib/i386-linux-gnu/gconf/gconfd-2
+4   113  1995     1  20   0  37572 10852 poll_s Sl   ?          0:00 /usr/lib/colord/colord
+0  1000  2029  1310  20   0  35960  8320 poll_s Sl   ?          0:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.8 /org/gtk/gvfs/exec_spaw/0
+0  1000  2045  1310  20   0  54880  9284 poll_s Sl   ?          0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.8 /org/gtk/gvfs/exec_spaw/1
+0  1000  2054  1550  20   0  82384 17564 poll_s Sl   ?          0:00 telepathy-indicator
+0  1000  2062  1310  20   0  44592 12836 poll_s Sl   ?          0:00 /usr/lib/telepathy/mission-control-5
+0  1000  2075  1550  20   0  60464 15960 poll_s Sl   ?          0:00 zeitgeist-datahub
+0  1000  2080  1310  20   0  45228  7804 poll_s Sl   ?          0:00 /usr/bin/zeitgeist-daemon
+0  1000  2086  1310  20   0  58480 13996 poll_s Sl   ?          0:00 /usr/lib/i386-linux-gnu/zeitgeist-fts
+0  1000  2095  2086  20   0   4256   592 unix_s S    ?          0:00 /bin/cat
+0  1000  2130  1550  20   0  62816 24672 poll_s Sl   ?          0:00 update-notifier
+0  1000  2152  1550  20   0  64044  7692 poll_s Sl   ?          0:00 /usr/lib/i386-linux-gnu/deja-dup/deja-dup-monitor
+0  1000  2206  1310  20   0 127644 26884 poll_s Sl   ?          0:01 gnome-terminal
+0  1000  2215  2206  20   0   2428  1760 unix_s S    ?          0:00 gnome-pty-helper
+0  1000  2216  2206  20   0   6952  4884 wait   Ss   pts/0      0:00 bash
+0  1000  2275  1310  20   0 631404 160564 poll_s Sl  ?          0:19 /usr/lib/firefox/firefox
+0  1000  2301  1310  20   0  36504  8748 poll_s Sl   ?          0:00 /usr/lib/libunity-webapps/unity-webapps-service
+1     0  2438     2  20   0      0     0 worker S    ?          0:00 [kworker/u2:2]
+0  1000  2442  2216  20   0   9496  6036 pipe_w S+   pts/0      0:00 python comExec.py
+0  1000  2443  2442  20   0   2276   616 wait   S+   pts/0      0:00 /bin/sh -c ps -e l > in_file
+0  1000  2444  2443  20   0   4996  1988 -      R+   pts/0      0:00 ps -e l

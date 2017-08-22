@@ -1,0 +1,168 @@
+  PID  COMMAND
+    1  /sbin/init
+  294  \_ upstart-udev-bridge --daemon
+  299  \_ /lib/systemd/systemd-udevd --daemon
+  373  \_ dbus-daemon --system --fork
+  410  \_ /usr/sbin/bluetoothd
+  417  \_ rsyslogd
+  420  \_ /lib/systemd/systemd-logind
+  462  \_ upstart-file-bridge --daemon
+  517  \_ upstart-socket-bridge --daemon
+  563  \_ /usr/sbin/ModemManager
+  610  \_ NetworkManager
+  653  |   \_ /sbin/dhclient -d -sf /usr/lib/NetworkManager/nm-dhcp-client.action -pf /run/sendsigs.omit.d/network-manager.dhclient-eth0.pid -lf /var/lib/NetworkManager/dhclient-7cc8c3e3-b468-4b6f-9a58-197f530dbe95-eth0.lease -cf /var/lib/NetworkManager/dhclient-eth0.conf eth0
+  697  |   \_ /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/run/sendsigs.omit.d/network-manager.dnsmasq.pid --listen-address=127.0.1.1 --conf-file=/var/run/NetworkManager/dnsmasq.conf --cache-size=0 --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
+  623  \_ /usr/lib/policykit-1/polkitd --no-debug
+  792  \_ /bin/sh -e /proc/self/fd/9
+  805  |   \_ initctl emit plymouth-ready
+  829  \_ /sbin/getty -8 38400 tty4
+  840  \_ /sbin/getty -8 38400 tty5
+  852  \_ /sbin/getty -8 38400 tty2
+  853  \_ /sbin/getty -8 38400 tty3
+  861  \_ /sbin/getty -8 38400 tty6
+  922  \_ acpid -c /etc/acpi/events -s /var/run/acpid.socket
+  925  \_ cron
+  932  \_ /usr/sbin/kerneloops
+  943  \_ whoopsie
+  988  \_ lightdm
+ 1052  |   \_ /usr/bin/X -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+ 1143  |   \_ lightdm --session-child 12 15
+ 1172  |      \_ init --user
+ 1434  |         \_ dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-NxC26GY6w9
+ 1446  |         \_ upstart-event-bridge
+ 1451  |         \_ /usr/lib/i386-linux-gnu/hud/window-stack-bridge
+ 1459  |         \_ gnome-keyring-daemon --start --components pkcs11,secrets
+ 1487  |         \_ /usr/lib/i386-linux-gnu/bamf/bamfdaemon
+ 1489  |         \_ upstart-dbus-bridge --daemon --session --user --bus-name session
+ 1492  |         \_ upstart-dbus-bridge --daemon --system --user --bus-name system
+ 1493  |         \_ upstart-file-bridge --daemon --user
+ 1496  |         \_ /usr/bin/ibus-daemon --daemonize --xim
+ 1536  |         |   \_ /usr/lib/ibus/ibus-dconf
+ 1540  |         |   \_ /usr/lib/ibus/ibus-ui-gtk3
+ 1692  |         |   \_ /usr/lib/ibus/ibus-engine-simple
+ 1512  |         \_ /usr/lib/unity-settings-daemon/unity-settings-daemon
+ 1813  |         |   \_ [check_gl_textur] <defunct>
+ 1516  |         \_ /usr/lib/gvfs/gvfsd
+ 1518  |         \_ /usr/lib/i386-linux-gnu/hud/hud-service
+ 1524  |         \_ gnome-session --session=ubuntu
+ 1992  |         |   \_ compiz
+ 2037  |         |   \_ /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+ 2049  |         |   \_ /usr/lib/unity-settings-daemon/unity-fallback-mount-helper
+ 2081  |         |   \_ nm-applet
+ 2122  |         |   \_ nautilus -n
+ 2222  |         |   \_ telepathy-indicator
+ 2245  |         |   \_ zeitgeist-datahub
+ 2317  |         |   \_ update-notifier
+ 2399  |         |   \_ /usr/lib/i386-linux-gnu/deja-dup/deja-dup-monitor
+ 1528  |         \_ /usr/lib/at-spi2-core/at-spi-bus-launcher
+ 1549  |         |   \_ /bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+ 1530  |         \_ /usr/lib/unity/unity-panel-service
+ 1539  |         \_ /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+ 1550  |         \_ /usr/lib/ibus/ibus-x11 --kill-daemon
+ 1568  |         \_ /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+ 1626  |         \_ /usr/lib/i386-linux-gnu/notify-osd
+ 1676  |         \_ /usr/lib/i386-linux-gnu/indicator-keyboard-service --use-gtk
+ 1681  |         \_ /usr/lib/i386-linux-gnu/indicator-messages/indicator-messages-service
+ 1685  |         \_ /usr/lib/i386-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+ 1688  |         \_ /usr/lib/i386-linux-gnu/indicator-power/indicator-power-service
+ 1695  |         \_ /usr/lib/i386-linux-gnu/indicator-datetime/indicator-datetime-service
+ 1705  |         \_ /usr/lib/i386-linux-gnu/indicator-sound/indicator-sound-service
+ 1706  |         \_ /usr/lib/i386-linux-gnu/indicator-printers/indicator-printers-service
+ 1709  |         \_ /usr/lib/i386-linux-gnu/indicator-session/indicator-session-service
+ 1717  |         \_ /usr/lib/i386-linux-gnu/indicator-application/indicator-application-service
+ 1743  |         \_ /usr/lib/evolution/evolution-source-registry
+ 1759  |         \_ /usr/bin/pulseaudio --start --log-target=syslog
+ 1884  |         \_ /usr/lib/dconf/dconf-service
+ 2038  |         \_ /usr/lib/evolution/evolution-calendar-factory
+ 2140  |         \_ /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+ 2159  |         \_ /usr/lib/gvfs/gvfs-afc-volume-monitor
+ 2164  |         \_ /usr/lib/gvfs/gvfs-mtp-volume-monitor
+ 2166  |         \_ /usr/lib/i386-linux-gnu/gconf/gconfd-2
+ 2170  |         \_ /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+ 2208  |         \_ /usr/lib/gvfs/gvfsd-burn --spawner :1.10 /org/gtk/gvfs/exec_spaw/0
+ 2214  |         \_ /usr/lib/gvfs/gvfsd-trash --spawner :1.10 /org/gtk/gvfs/exec_spaw/1
+ 2229  |         \_ /usr/lib/telepathy/mission-control-5
+ 2250  |         \_ /usr/bin/zeitgeist-daemon
+ 2256  |         \_ /usr/lib/i386-linux-gnu/zeitgeist-fts
+ 2266  |         |   \_ /bin/cat
+ 2271  |         \_ /usr/lib/i386-linux-gnu/unity-scope-home/unity-scope-home
+ 2330  |         \_ gnome-terminal
+ 2339  |         |   \_ gnome-pty-helper
+ 2340  |         |   \_ bash
+ 2866  |         |      \_ python comExec.py
+ 2867  |         |         \_ /bin/sh -c ps -e l > in_file
+ 2868  |         |            \_ ps -e l
+ 2435  |         \_ /usr/lib/libunity-webapps/unity-webapps-service
+ 2474  |         \_ deja-dup --prompt
+ 2545  |         \_ /usr/lib/firefox/firefox
+ 2824  |         \_ gedit
+ 2858  |         \_ /usr/lib/gvfs/gvfsd-metadata
+ 1015  \_ /usr/sbin/cups-browsed
+ 1019  \_ /usr/lib/accountsservice/accounts-daemon
+ 1261  \_ /usr/sbin/VBoxService
+ 1336  \_ /sbin/getty -8 38400 tty1
+ 1367  \_ dbus-launch --autolaunch=f3b459bb480eac6a6debd0f8554b0b8c --binary-syntax --close-stderr
+ 1369  \_ //bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+ 1374  \_ /usr/bin/VBoxClient --clipboard
+ 1376  |   \_ /usr/bin/VBoxClient --clipboard
+ 1388  \_ /usr/bin/VBoxClient --display
+ 1389  |   \_ /usr/bin/VBoxClient --display
+ 1397  \_ /usr/bin/VBoxClient --seamless
+ 1398  |   \_ /usr/bin/VBoxClient --seamless
+ 1406  \_ /usr/bin/VBoxClient --draganddrop
+ 1407  |   \_ /usr/bin/VBoxClient --draganddrop
+ 1593  \_ /usr/lib/upower/upowerd
+ 1595  \_ /usr/sbin/cupsd -f
+ 1620  |   \_ /usr/lib/cups/notifier/dbus dbus:// 
+ 1779  \_ /usr/lib/rtkit/rtkit-daemon
+ 1876  \_ /usr/lib/colord/colord
+ 2145  \_ /usr/lib/udisks2/udisksd --no-debug
+ 2848  \_ /lib/systemd/systemd-hostnamed
+    2  [kthreadd]
+    3  \_ [ksoftirqd/0]
+    5  \_ [kworker/0:0H]
+    7  \_ [rcu_sched]
+    8  \_ [rcu_bh]
+    9  \_ [migration/0]
+   10  \_ [watchdog/0]
+   11  \_ [khelper]
+   12  \_ [kdevtmpfs]
+   13  \_ [netns]
+   14  \_ [khungtaskd]
+   15  \_ [writeback]
+   16  \_ [ksmd]
+   17  \_ [khugepaged]
+   18  \_ [crypto]
+   19  \_ [kintegrityd]
+   20  \_ [bioset]
+   21  \_ [kblockd]
+   22  \_ [ata_sff]
+   23  \_ [khubd]
+   24  \_ [md]
+   25  \_ [devfreq_wq]
+   26  \_ [kworker/u2:1]
+   27  \_ [kworker/0:1]
+   28  \_ [kswapd0]
+   29  \_ [fsnotify_mark]
+   30  \_ [ecryptfs-kthrea]
+   42  \_ [kthrotld]
+   43  \_ [acpi_thermal_pm]
+   45  \_ [scsi_eh_0]
+   46  \_ [scsi_tmf_0]
+   47  \_ [scsi_eh_1]
+   48  \_ [scsi_tmf_1]
+   50  \_ [ipv6_addrconf]
+   70  \_ [deferwq]
+   71  \_ [charger_manager]
+  117  \_ [kpsmoused]
+  118  \_ [kworker/0:2]
+  119  \_ [scsi_eh_2]
+  120  \_ [scsi_tmf_2]
+  130  \_ [kworker/0:1H]
+  131  \_ [jbd2/sda1-8]
+  132  \_ [ext4-rsv-conver]
+  377  \_ [iprt]
+  447  \_ [krfcommd]
+ 1147  \_ [kauditd]
+ 2783  \_ [kworker/u2:2]
+ 2838  \_ [kworker/u2:0]
