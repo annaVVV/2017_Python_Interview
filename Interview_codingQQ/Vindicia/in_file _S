@@ -1,0 +1,428 @@
+F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
+4     0     1     0  20   0 311144 124392 ep_pol Ss  ?         33:44 /usr/lib/systemd/systemd --switched-root --system --deserialize 21
+1     0     2     0  20   0      0     0 kthrea S    ?          0:32 [kthreadd]
+1     0     3     2  20   0      0     0 smpboo S    ?          0:21 [ksoftirqd/0]
+1     0     5     2   0 -20      0     0 worker S<   ?          0:00 [kworker/0:0H]
+1     0     8     2 -100  -      0     0 smpboo S    ?          8:30 [migration/0]
+1     0     9     2  20   0      0     0 rcu_gp S    ?          0:00 [rcu_bh]
+1     0    10     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/0]
+1     0    11     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/1]
+1     0    12     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/2]
+1     0    13     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/3]
+1     0    14     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/4]
+1     0    15     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/5]
+1     0    16     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/6]
+1     0    17     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/7]
+1     0    18     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/8]
+1     0    19     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/9]
+1     0    20     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/10]
+1     0    21     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/11]
+1     0    22     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/12]
+1     0    23     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/13]
+1     0    24     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/14]
+1     0    25     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/15]
+1     0    26     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/16]
+1     0    27     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/17]
+1     0    28     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/18]
+1     0    29     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/19]
+1     0    30     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/20]
+1     0    31     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/21]
+1     0    32     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/22]
+1     0    33     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/23]
+1     0    34     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/24]
+1     0    35     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/25]
+1     0    36     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/26]
+1     0    37     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/27]
+1     0    38     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/28]
+1     0    39     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/29]
+1     0    40     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/30]
+1     0    41     2  20   0      0     0 rcu_no S    ?          0:00 [rcuob/31]
+1     0    42     2  20   0      0     0 rcu_gp S    ?        1055:06 [rcu_sched]
+1     0    43     2  20   0      0     0 rcu_no S    ?         33:09 [rcuos/0]
+1     0    44     2  20   0      0     0 rcu_no S    ?         28:20 [rcuos/1]
+1     0    45     2  20   0      0     0 rcu_no S    ?         21:37 [rcuos/2]
+1     0    46     2  20   0      0     0 rcu_no S    ?         43:35 [rcuos/3]
+1     0    47     2  20   0      0     0 rcu_no S    ?         16:37 [rcuos/4]
+1     0    48     2  20   0      0     0 rcu_no S    ?         27:18 [rcuos/5]
+1     0    49     2  20   0      0     0 rcu_no S    ?         87:28 [rcuos/6]
+1     0    50     2  20   0      0     0 rcu_no S    ?         19:16 [rcuos/7]
+1     0    51     2  20   0      0     0 rcu_no S    ?         32:50 [rcuos/8]
+1     0    52     2  20   0      0     0 rcu_no S    ?         15:08 [rcuos/9]
+1     0    53     2  20   0      0     0 rcu_no S    ?         94:39 [rcuos/10]
+1     0    54     2  20   0      0     0 rcu_no S    ?         95:05 [rcuos/11]
+1     0    55     2  20   0      0     0 rcu_no S    ?         14:38 [rcuos/12]
+1     0    56     2  20   0      0     0 rcu_no S    ?        101:45 [rcuos/13]
+1     0    57     2  20   0      0     0 rcu_no S    ?         30:03 [rcuos/14]
+1     0    58     2  20   0      0     0 rcu_no S    ?         39:13 [rcuos/15]
+1     0    59     2  20   0      0     0 rcu_no S    ?         12:07 [rcuos/16]
+1     0    60     2  20   0      0     0 rcu_no S    ?         12:50 [rcuos/17]
+1     0    61     2  20   0      0     0 rcu_no S    ?         12:56 [rcuos/18]
+1     0    62     2  20   0      0     0 rcu_no S    ?         10:31 [rcuos/19]
+1     0    63     2  20   0      0     0 rcu_no S    ?          8:51 [rcuos/20]
+1     0    64     2  20   0      0     0 rcu_no S    ?          8:25 [rcuos/21]
+1     0    65     2  20   0      0     0 rcu_no S    ?          9:02 [rcuos/22]
+1     0    66     2  20   0      0     0 rcu_no S    ?         10:55 [rcuos/23]
+1     0    67     2  20   0      0     0 rcu_no S    ?          0:00 [rcuos/24]
+1     0    68     2  20   0      0     0 rcu_no S    ?          0:00 [rcuos/25]
+1     0    69     2  20   0      0     0 rcu_no S    ?          0:00 [rcuos/26]
+1     0    70     2  20   0      0     0 rcu_no S    ?          0:00 [rcuos/27]
+1     0    71     2  20   0      0     0 rcu_no S    ?          0:00 [rcuos/28]
+1     0    72     2  20   0      0     0 rcu_no S    ?          0:00 [rcuos/29]
+1     0    73     2  20   0      0     0 rcu_no S    ?          0:00 [rcuos/30]
+1     0    74     2  20   0      0     0 rcu_no S    ?          0:00 [rcuos/31]
+5     0    75     2 -100  -      0     0 smpboo S    ?          0:35 [watchdog/0]
+5     0    76     2 -100  -      0     0 smpboo S    ?          0:39 [watchdog/1]
+1     0    77     2 -100  -      0     0 smpboo S    ?          3:02 [migration/1]
+1     0    78     2  20   0      0     0 smpboo S    ?          0:24 [ksoftirqd/1]
+1     0    80     2   0 -20      0     0 worker S<   ?          0:00 [kworker/1:0H]
+5     0    82     2 -100  -      0     0 smpboo S    ?          0:33 [watchdog/2]
+1     0    83     2 -100  -      0     0 smpboo S    ?          6:18 [migration/2]
+1     0    84     2  20   0      0     0 smpboo S    ?          0:10 [ksoftirqd/2]
+5     0    87     2 -100  -      0     0 smpboo S    ?          0:41 [watchdog/3]
+1     0    88     2 -100  -      0     0 smpboo S    ?          3:47 [migration/3]
+1     0    89     2  20   0      0     0 smpboo S    ?          0:17 [ksoftirqd/3]
+1     0    91     2   0 -20      0     0 worker S<   ?          0:00 [kworker/3:0H]
+5     0    92     2 -100  -      0     0 smpboo S    ?          0:31 [watchdog/4]
+1     0    93     2 -100  -      0     0 smpboo S    ?          4:55 [migration/4]
+1     0    94     2  20   0      0     0 smpboo S    ?          0:06 [ksoftirqd/4]
+1     0    96     2   0 -20      0     0 worker S<   ?          0:00 [kworker/4:0H]
+5     0    97     2 -100  -      0     0 smpboo S    ?          0:33 [watchdog/5]
+1     0    98     2 -100  -      0     0 smpboo S    ?          3:17 [migration/5]
+1     0    99     2  20   0      0     0 smpboo S    ?          0:21 [ksoftirqd/5]
+5     0   102     2 -100  -      0     0 smpboo S    ?          0:54 [watchdog/6]
+1     0   103     2 -100  -      0     0 smpboo S    ?         15:04 [migration/6]
+1     0   104     2  20   0      0     0 smpboo S    ?          1:17 [ksoftirqd/6]
+1     0   106     2   0 -20      0     0 worker S<   ?          0:00 [kworker/6:0H]
+5     0   107     2 -100  -      0     0 smpboo S    ?          4:04 [watchdog/7]
+1     0   108     2 -100  -      0     0 smpboo S    ?          2:45 [migration/7]
+1     0   109     2  20   0      0     0 smpboo S    ?          0:18 [ksoftirqd/7]
+5     0   112     2 -100  -      0     0 smpboo S    ?          0:37 [watchdog/8]
+1     0   113     2 -100  -      0     0 smpboo S    ?          7:39 [migration/8]
+1     0   114     2  20   0      0     0 smpboo S    ?          0:10 [ksoftirqd/8]
+1     0   116     2   0 -20      0     0 worker S<   ?          0:00 [kworker/8:0H]
+5     0   117     2 -100  -      0     0 smpboo S    ?          0:32 [watchdog/9]
+1     0   118     2 -100  -      0     0 smpboo S    ?          2:43 [migration/9]
+1     0   119     2  20   0      0     0 smpboo S    ?          0:11 [ksoftirqd/9]
+1     0   121     2   0 -20      0     0 worker S<   ?          0:00 [kworker/9:0H]
+5     0   122     2 -100  -      0     0 smpboo S    ?          0:55 [watchdog/10]
+1     0   123     2 -100  -      0     0 smpboo S    ?         14:43 [migration/10]
+1     0   124     2  20   0      0     0 smpboo S    ?          1:16 [ksoftirqd/10]
+1     0   126     2   0 -20      0     0 worker S<   ?          0:00 [kworker/10:0H]
+5     0   127     2 -100  -      0     0 smpboo S    ?          0:56 [watchdog/11]
+1     0   128     2 -100  -      0     0 smpboo S    ?          6:22 [migration/11]
+1     0   129     2  20   0      0     0 smpboo S    ?          1:21 [ksoftirqd/11]
+1     0   131     2   0 -20      0     0 worker S<   ?          0:00 [kworker/11:0H]
+5     0   132     2 -100  -      0     0 smpboo S    ?          2:43 [watchdog/12]
+1     0   133     2 -100  -      0     0 smpboo S    ?          2:35 [migration/12]
+1     0   134     2  20   0      0     0 smpboo S    ?          0:10 [ksoftirqd/12]
+1     0   136     2   0 -20      0     0 worker S<   ?          0:00 [kworker/12:0H]
+5     0   137     2 -100  -      0     0 smpboo S    ?          0:56 [watchdog/13]
+1     0   138     2 -100  -      0     0 smpboo S    ?          5:16 [migration/13]
+1     0   139     2  20   0      0     0 smpboo S    ?          1:07 [ksoftirqd/13]
+1     0   141     2   0 -20      0     0 worker S<   ?          0:00 [kworker/13:0H]
+5     0   142     2 -100  -      0     0 smpboo S    ?          0:32 [watchdog/14]
+1     0   143     2 -100  -      0     0 smpboo S    ?          3:08 [migration/14]
+1     0   144     2  20   0      0     0 smpboo S    ?          0:06 [ksoftirqd/14]
+1     0   146     2   0 -20      0     0 worker S<   ?          0:00 [kworker/14:0H]
+5     0   147     2 -100  -      0     0 smpboo S    ?          0:34 [watchdog/15]
+1     0   148     2 -100  -      0     0 smpboo S    ?          2:09 [migration/15]
+1     0   149     2  20   0      0     0 smpboo S    ?          0:07 [ksoftirqd/15]
+1     0   151     2   0 -20      0     0 worker S<   ?          0:00 [kworker/15:0H]
+5     0   152     2 -100  -      0     0 smpboo S    ?          0:31 [watchdog/16]
+1     0   153     2 -100  -      0     0 smpboo S    ?          3:08 [migration/16]
+1     0   154     2  20   0      0     0 smpboo S    ?          0:05 [ksoftirqd/16]
+1     0   156     2   0 -20      0     0 worker S<   ?          0:00 [kworker/16:0H]
+5     0   157     2 -100  -      0     0 smpboo S    ?          0:33 [watchdog/17]
+1     0   158     2 -100  -      0     0 smpboo S    ?          1:14 [migration/17]
+1     0   159     2  20   0      0     0 smpboo S    ?          0:05 [ksoftirqd/17]
+1     0   161     2   0 -20      0     0 worker S<   ?          0:00 [kworker/17:0H]
+5     0   162     2 -100  -      0     0 smpboo S    ?          0:31 [watchdog/18]
+1     0   163     2 -100  -      0     0 smpboo S    ?          2:12 [migration/18]
+1     0   164     2  20   0      0     0 smpboo S    ?          0:09 [ksoftirqd/18]
+1     0   166     2   0 -20      0     0 worker S<   ?          0:00 [kworker/18:0H]
+5     0   167     2 -100  -      0     0 smpboo S    ?          0:29 [watchdog/19]
+1     0   168     2 -100  -      0     0 smpboo S    ?          1:22 [migration/19]
+1     0   169     2  20   0      0     0 smpboo S    ?          0:03 [ksoftirqd/19]
+1     0   171     2   0 -20      0     0 worker S<   ?          0:00 [kworker/19:0H]
+5     0   172     2 -100  -      0     0 smpboo S    ?          0:29 [watchdog/20]
+1     0   173     2 -100  -      0     0 smpboo S    ?          1:43 [migration/20]
+1     0   174     2  20   0      0     0 smpboo S    ?          0:03 [ksoftirqd/20]
+1     0   176     2   0 -20      0     0 worker S<   ?          0:00 [kworker/20:0H]
+5     0   177     2 -100  -      0     0 smpboo S    ?          0:28 [watchdog/21]
+1     0   178     2 -100  -      0     0 smpboo S    ?          1:25 [migration/21]
+1     0   179     2  20   0      0     0 smpboo S    ?          0:05 [ksoftirqd/21]
+1     0   181     2   0 -20      0     0 worker S<   ?          0:00 [kworker/21:0H]
+5     0   182     2 -100  -      0     0 smpboo S    ?          0:31 [watchdog/22]
+1     0   183     2 -100  -      0     0 smpboo S    ?          1:46 [migration/22]
+1     0   184     2  20   0      0     0 smpboo S    ?          0:06 [ksoftirqd/22]
+1     0   186     2   0 -20      0     0 worker S<   ?          0:00 [kworker/22:0H]
+5     0   187     2 -100  -      0     0 smpboo S    ?          0:30 [watchdog/23]
+1     0   188     2 -100  -      0     0 smpboo S    ?          0:58 [migration/23]
+1     0   189     2  20   0      0     0 smpboo S    ?          0:04 [ksoftirqd/23]
+1     0   191     2   0 -20      0     0 worker S<   ?          0:00 [kworker/23:0H]
+1     0   192     2   0 -20      0     0 rescue S<   ?          0:00 [khelper]
+5     0   193     2  20   0      0     0 devtmp S    ?          0:00 [kdevtmpfs]
+1     0   194     2   0 -20      0     0 rescue S<   ?          0:00 [netns]
+1     0   195     2   0 -20      0     0 rescue S<   ?          0:00 [perf]
+1     0   196     2   0 -20      0     0 rescue S<   ?          0:00 [writeback]
+1     0   197     2   0 -20      0     0 rescue S<   ?          0:00 [kintegrityd]
+1     0   198     2   0 -20      0     0 rescue S<   ?          0:00 [bioset]
+1     0   199     2   0 -20      0     0 rescue S<   ?          0:00 [kblockd]
+1     0   200     2   0 -20      0     0 rescue S<   ?          0:00 [md]
+1     0   205     2  20   0      0     0 watchd S    ?          0:10 [khungtaskd]
+1     0   206     2  20   0      0     0 kswapd S    ?         24:09 [kswapd0]
+1     0   207     2  20   0      0     0 kswapd S    ?         23:54 [kswapd1]
+1     0   208     2  25   5      0     0 ksm_sc SN   ?          0:00 [ksmd]
+1     0   209     2  39  19      0     0 khugep SN   ?         20:20 [khugepaged]
+1     0   210     2  20   0      0     0 fsnoti S    ?          0:04 [fsnotify_mark]
+1     0   211     2   0 -20      0     0 rescue S<   ?          0:00 [crypto]
+1     0   219     2   0 -20      0     0 rescue S<   ?          0:00 [kthrotld]
+1     0   221     2   0 -20      0     0 rescue S<   ?          0:00 [kmpath_rdacd]
+1     0   223     2   0 -20      0     0 rescue S<   ?          0:00 [kpsmoused]
+1     0   225     2   0 -20      0     0 rescue S<   ?          0:00 [ipv6_addrconf]
+1     0   245     2   0 -20      0     0 rescue S<   ?          0:00 [deferwq]
+1     0   298     2  20   0      0     0 kaudit S    ?          0:54 [kauditd]
+1     0   487     2  20   0      0     0 scsi_e S    ?          0:00 [scsi_eh_0]
+1     0   488     2   0 -20      0     0 rescue S<   ?          0:00 [scsi_tmf_0]
+1     0   500     2   0 -20      0     0 rescue S<   ?          0:00 [events_power_ef]
+1     0   501     2   0 -20      0     0 rescue S<   ?          0:00 [ttm_swap]
+1     0   590     2   0 -20      0     0 rescue S<   ?          0:00 [kdmflush]
+1     0   591     2   0 -20      0     0 rescue S<   ?          0:00 [bioset]
+1     0   600     2   0 -20      0     0 rescue S<   ?          0:00 [kdmflush]
+1     0   601     2   0 -20      0     0 rescue S<   ?          0:00 [bioset]
+1     0   616     2   0 -20      0     0 rescue S<   ?          0:00 [xfsalloc]
+1     0   617     2   0 -20      0     0 rescue S<   ?          0:00 [xfs_mru_cache]
+1     0   618     2   0 -20      0     0 rescue S<   ?          0:00 [xfs-buf/dm-0]
+1     0   619     2   0 -20      0     0 rescue S<   ?          0:00 [xfs-data/dm-0]
+1     0   620     2   0 -20      0     0 rescue S<   ?          0:00 [xfs-conv/dm-0]
+1     0   621     2   0 -20      0     0 rescue S<   ?          0:00 [xfs-cil/dm-0]
+1     0   622     2  20   0      0     0 xfsail S    ?        238:16 [xfsaild/dm-0]
+4     0   702     1  20   0  70736 13840 ep_pol Ss   ?         12:00 /usr/lib/systemd/systemd-journald
+4     0   707     1  20   0 126668     0 poll_s Ss   ?          0:00 /usr/sbin/lvmetad -f
+4     0   724     1  20   0  43172   764 ep_pol Ss   ?          1:06 /usr/lib/systemd/systemd-udevd
+1     0   727     2   0 -20      0     0 worker S<   ?          0:01 [kworker/9:1H]
+1     0   809     2   0 -20      0     0 rescue S<   ?          0:00 [edac-poller]
+1     0   810     2  39  19      0     0 ipmi_t SN   ?          0:00 [kipmi0]
+1     0   841     2   0 -20      0     0 rescue S<   ?          0:00 [kvm-irqfd-clean]
+1     0   848     2   0 -20      0     0 rescue S<   ?          0:00 [iscsi_eh]
+1     0   860     2  20   0      0     0 scsi_e S    ?          0:00 [scsi_eh_1]
+1     0   861     2   0 -20      0     0 rescue S<   ?          0:00 [scsi_tmf_1]
+1     0   867     2   0 -20      0     0 rescue S<   ?          0:00 [xfs-buf/sda1]
+1     0   868     2   0 -20      0     0 rescue S<   ?          0:00 [xfs-data/sda1]
+1     0   869     2   0 -20      0     0 rescue S<   ?          0:00 [xfs-conv/sda1]
+1     0   870     2   0 -20      0     0 rescue S<   ?          0:00 [xfs-cil/sda1]
+1     0   874     2  20   0      0     0 xfsail S    ?          0:00 [xfsaild/sda1]
+1     0   877     2   0 -20      0     0 rescue S<   ?          0:00 [kdmflush]
+1     0   878     2   0 -20      0     0 rescue S<   ?          0:00 [bioset]
+1     0   885     2   0 -20      0     0 rescue S<   ?          0:00 [xfs-buf/dm-2]
+1     0   886     2   0 -20      0     0 rescue S<   ?          0:00 [xfs-data/dm-2]
+1     0   887     2   0 -20      0     0 rescue S<   ?          0:00 [xfs-conv/dm-2]
+1     0   888     2   0 -20      0     0 rescue S<   ?          0:00 [xfs-cil/dm-2]
+1     0   889     2  20   0      0     0 xfsail S    ?        216:27 [xfsaild/dm-2]
+1     0   891     2   0 -20      0     0 rescue S<   ?          0:00 [beiscsi_01_wq]
+1     0   892     2   0 -20      0     0 rescue S<   ?          0:00 [scsi_wq_1]
+1     0   893     2  20   0      0     0 scsi_e S    ?          0:00 [scsi_eh_2]
+1     0   894     2   0 -20      0     0 rescue S<   ?          0:00 [scsi_tmf_2]
+1     0   895     2   0 -20      0     0 rescue S<   ?          0:00 [beiscsi_02_wq]
+1     0   896     2   0 -20      0     0 rescue S<   ?          0:00 [scsi_wq_2]
+1     0   914     2   0 -20      0     0 rescue S<   ?          0:00 [ib_addr]
+1     0   928     2   0 -20      0     0 rescue S<   ?          0:00 [ib_mcast]
+1     0   934     2   0 -20      0     0 rescue S<   ?          0:00 [iw_cm_wq]
+1     0   940     2   0 -20      0     0 rescue S<   ?          0:00 [ib_cm]
+1     0   944     2   0 -20      0     0 rescue S<   ?          0:00 [rdma_cm]
+1     0   968     2   0 -20      0     0 rescue S<   ?          0:00 [ipoib_flush]
+1     0   974     2   0 -20      0     0 rescue S<   ?          0:00 [srp_remove]
+1     0   978     2   0 -20      0     0 rescue S<   ?          0:00 [target_completi]
+1     0   979     2   0 -20      0     0 rescue S<   ?          0:00 [tmr-rd_mcp]
+1     0   980     2   0 -20      0     0 rescue S<   ?          0:00 [xcopy_wq]
+1     0   989     2   0 -20      0     0 worker S<   ?          0:00 [kworker/u67:0]
+1     0   990     2   0 -20      0     0 worker S<   ?          0:00 [kworker/u68:0]
+1     0   991     2   0 -20      0     0 worker S<   ?          0:00 [kworker/u69:0]
+1     0   996     2   0 -20      0     0 rescue S<   ?          0:00 [rpciod]
+4     0  1008     1  16  -4 116716   148 ep_pol S<sl ?          3:03 /sbin/auditd -n
+4     0  1030     1  20   0  19308   436 hrtime Ss   ?         20:06 /usr/sbin/irqbalance --foreground
+4     0  1033     1  20   0 210452     4 poll_s Ss   ?          0:00 /usr/sbin/abrtd -d -s
+4    81  1034     1  20   0  47212   832 ep_pol Ss   ?         22:39 /bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+4     0  1040     1  20   0 687824  6632 poll_s Ssl  ?          7:03 /usr/sbin/rsyslogd -n
+4   996  1050     1  20   0   8524    32 poll_s Ss   ?          0:38 /usr/bin/lsmd -d
+4     0  1055     1  20   0 553068  2156 poll_s Ssl  ?         20:07 /usr/bin/python -Es /usr/sbin/tuned -l -P
+4     0  1075     1  20   0 207972   100 hrtime Ss   ?          1:23 /usr/bin/abrt-watch-log -F BUG: WARNING: at WARNING: CPU: INFO: possible recursive locking detected ernel BUG at list_del corruption list_add corruption do_IRQ: stack overflow: ear stack overflow (cur: eneral protection fault nable to handle kernel ouble fault: RTNL: assertion failed eek! page_mapcount(page) went negative! adness at NETDEV WATCHDOG ysctl table check failed : nobody cared IRQ handler type mismatch Machine Check Exception: Machine check events logged divide error: bounds: coprocessor segment overrun: invalid TSS: segment not present: invalid opcode: alignment check: stack segment: fpu exception: simd exception: iret exception: /var/log/messages -- /usr/bin/abrt-dump-oops -xtD
+4     0  1105     1  20   0  30668    84 poll_s Ss   ?          0:00 /usr/sbin/oddjobd -n -p /var/run/oddjobd.pid -t 300
+4     0  1112     1  20   0 130060    24 hrtime Ss   ?          0:00 /usr/sbin/smartd -n -q never
+1     0  1144     2   0 -20      0     0 worker S<   ?          0:03 [kworker/0:1H]
+5     0  1147     1  20   0 257516   724 ep_pol Ss   ?          0:34 /usr/sbin/sssd -D -f
+4     0  1159     1  20   0  82544   356 poll_s Ss   ?          0:26 /usr/sbin/sshd -D
+4     0  1196  1147  20   0 263372  1768 ep_pol S    ?          5:10 /usr/libexec/sssd/sssd_nss --uid 0 --gid 0 --debug-to-files
+4     0  1197  1147  20   0 240764  1452 ep_pol S    ?          5:46 /usr/libexec/sssd/sssd_pam --uid 0 --gid 0 --debug-to-files
+4     0  1198  1147  20   0 236424   320 ep_pol S    ?          1:46 /usr/libexec/sssd/sssd_autofs --uid 0 --gid 0 --debug-to-files
+4     0  1259     1  20   0  37132  1064 ep_pol Ss   ?         12:13 /usr/lib/systemd/systemd-logind
+4     0  1305     1  20   0  25956    24 hrtime Ss   ?          0:00 /usr/sbin/atd -f
+4     0  1368     1  20   0 110036     8 n_tty_ Ss+  tty1       0:00 /sbin/agetty --noclear tty1 linux
+4     0  1369     1  20   0 110036     8 n_tty_ Ss+  ttyS0      0:00 /sbin/agetty --keep-baud 115200 38400 9600 ttyS0 vt220
+1     0  1579     2  20   0      0     0 worker S    ?          0:01 [kworker/15:1]
+1     0  1601     2   0 -20      0     0 worker S<   ?          0:01 [kworker/6:1H]
+1     0  2544     2   0 -20      0     0 worker S<   ?          0:02 [kworker/14:1H]
+1     0  2545     2   0 -20      0     0 worker S<   ?          0:00 [kworker/10:1H]
+1     0  2546     2   0 -20      0     0 worker S<   ?          0:01 [kworker/20:1H]
+1     0  2547     2   0 -20      0     0 worker S<   ?          0:00 [kworker/17:1H]
+1     0  2591     2   0 -20      0     0 worker S<   ?          0:00 [kworker/12:1H]
+1     0  2595     2   0 -20      0     0 worker S<   ?          0:00 [kworker/16:1H]
+1     0  2596     2   0 -20      0     0 worker S<   ?          0:00 [kworker/21:1H]
+1     0  2597     2   0 -20      0     0 worker S<   ?          0:06 [kworker/15:1H]
+1     0  2598     2   0 -20      0     0 worker S<   ?          0:01 [kworker/1:1H]
+1     0  2599     2   0 -20      0     0 worker S<   ?          0:00 [kworker/13:1H]
+1     0  2884     2   0 -20      0     0 worker S<   ?          0:00 [kworker/11:1H]
+1     0  2971     2   0 -20      0     0 worker S<   ?          0:00 [kworker/19:1H]
+1     0  3163     2   0 -20      0     0 worker S<   ?          0:00 [kworker/22:1H]
+1     0  3182     2   0 -20      0     0 worker S<   ?          0:00 [kworker/23:1H]
+1     0  3223     2   0 -20      0     0 worker S<   ?          0:01 [kworker/3:1H]
+1     0  3293     2  20   0      0     0 worker S    ?          0:03 [kworker/2:1]
+1     0  3567     2  20   0      0     0 worker S    ?          0:04 [kworker/5:1]
+1     0  3816     2   0 -20      0     0 worker S<   ?          0:02 [kworker/18:1H]
+1     0  4111     2  20   0      0     0 worker S    ?          0:03 [kworker/6:1]
+1     0  4209     2  20   0      0     0 worker S    ?          0:00 [kworker/u64:1]
+1     0  4266     2  20   0      0     0 worker S    ?          0:00 [kworker/19:1]
+1     0  4828     2  20   0      0     0 worker S    ?          0:00 [kworker/11:1]
+1     0  5083     2  20   0      0     0 worker S    ?          0:00 [kworker/u64:0]
+1     0  5166     2  20   0      0     0 worker S    ?          0:06 [kworker/7:1]
+1     0  5622     2  20   0      0     0 worker S    ?          0:02 [kworker/18:0]
+1     0  5638     2  20   0      0     0 worker S    ?          0:01 [kworker/17:0]
+1     0  6184     2  20   0      0     0 worker S    ?          0:00 [kworker/10:0]
+1     0  6868     2  20   0      0     0 worker S    ?          0:03 [kworker/3:2]
+1     0  7358     2  20   0      0     0 worker S    ?          0:00 [kworker/16:1]
+0  2583  7795 18941  20   0 134400     8 sigsus Ss   pts/16     0:00 -bin/tcsh
+0  2583  7852  7795  20   0 116712     0 poll_s S+   pts/16     0:00 rlwrap /usr/local/oracle/product/11.2.0/client_1/bin/sqlplus vindicia/VAE9EB0DIBFM19427TT510HLRA8L5D@//10.80.40.109/vindicia
+0  2583  7853  7852  20   0  76732     4 n_tty_ Ss+  pts/17     0:00 /usr/local/oracle/product/11.2.0/client_1/bin/sqlplus
+1     0  8036     2  20   0      0     0 worker S    ?          0:02 [kworker/4:2]
+0  2419  8177 25778  20   0 129020   276 n_tty_ Ss+  pts/6      0:00 /bin/bash
+1     0  8451     2  20   0      0     0 worker S    ?          0:00 [kworker/21:1]
+1     0  9125     2  20   0      0     0 worker S    ?          0:02 [kworker/8:0]
+1     0  9163     2  20   0      0     0 worker S    ?          0:00 [kworker/6:0]
+1     0  9748     2  20   0      0     0 worker S    ?          0:00 [kworker/12:2]
+1     0 10240     2  20   0      0     0 worker S    ?          0:00 [kworker/23:1]
+1     0 10379     2  20   0      0     0 worker S    ?          0:00 [kworker/20:0]
+4    89 10440 17149  20   0 103476  3916 ep_pol S    ?          0:00 pickup -l -t unix -u
+1  2011 10500     1  20   0 818316 178888 futex_ S   ?          1:05 /usr/bin/perl -w ./recurring_test.pl 20
+1  2011 10511     1  20   0 815052 185300 futex_ S   ?          1:04 /usr/bin/perl -w ./recurring_test.pl 20
+1     0 10625     2  20   0      0     0 worker S    ?          0:00 [kworker/21:2]
+1     0 10675     2  20   0      0     0 worker S    ?          0:00 [kworker/7:0]
+1     0 10875     2  20   0      0     0 worker S    ?          0:00 [kworker/5:0]
+5    99 11330 32745  20   0 1709612 1197388 fcntl_ S ?          2:32 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+1     0 11554     2  20   0      0     0 worker S    ?          0:00 [kworker/17:2]
+1     0 11706     2  20   0      0     0 worker S    ?          0:00 [kworker/3:0]
+1     0 11750     2  20   0      0     0 worker S    ?          0:00 [kworker/8:2]
+1     0 12280     2  20   0      0     0 worker S    ?          0:00 [kworker/1:0]
+5    99 12438 32745  20   0 1696300 1189312 fcntl_ S ?          2:10 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+1     0 12547     2  20   0      0     0 worker S    ?          0:00 [kworker/14:0]
+1     0 12551     2  20   0      0     0 worker S    ?          0:00 [kworker/23:2]
+1     0 12553     2  20   0      0     0 worker S    ?          0:00 [kworker/2:0]
+1     0 12555     2  20   0      0     0 worker S    ?          0:00 [kworker/10:1]
+4   498 12581     1  20   0 1457420 979220 ep_pol Ssl ?        54:59 /usr/bin/memcached -u memcached -p 11211 -m 8192 -c 8192 -P /var/run/memcached/memcached.pid -t 8 -I 5
+5    99 12735 32745  20   0 1636608 1126516 -   R    ?          1:08 /vindicia/apach -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+1     0 12738     2  20   0      0     0 worker S    ?          0:00 [kworker/15:0]
+5    99 12746 32745  20   0 1944572 1435932 fcntl_ S ?          4:07 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+1     0 12918     2  20   0      0     0 worker S    ?          0:00 [kworker/9:1]
+1     0 12919     2  20   0      0     0 worker S    ?          0:00 [kworker/0:2]
+1     0 12970     2  20   0      0     0 worker S    ?          0:00 [kworker/22:1]
+1     0 13129     2  20   0      0     0 worker S    ?          0:00 [kworker/4:0]
+5    99 13136 32745  20   0 2093604 1580060 poll_s S ?          1:45 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+5    99 13141 32745  20   0 1667540 1158344 poll_s S ?          1:26 /vindicia/apach -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+1     0 13338     2  20   0      0     0 worker S    ?          0:00 [kworker/19:0]
+5    99 13439 32745  20   0 1612476 1103384 poll_s S ?          0:55 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+5    99 13442 32745  20   0 1633324 1127472 fcntl_ S ?          1:01 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+5    99 13488 32745  20   0 1598476 1093280 fcntl_ S ?          0:51 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+1     0 13495     2  20   0      0     0 worker S    ?          0:00 [kworker/3:1]
+5    99 13496 32745  20   0 1597204 1090096 ep_pol S ?          0:46 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+1     0 13631     2  20   0      0     0 worker S    ?          0:00 [kworker/u65:1]
+5    99 13682 32745  20   0 1595376 1088772 fcntl_ S ?          0:40 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+1     0 13854     2  20   0      0     0 worker S    ?          0:00 [kworker/2:2]
+5    99 13857 32745  20   0 1573728 1064720 -   R    ?          0:24 /vindicia/apach -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+5    99 13863 32745  20   0 1568840 1064888 -   S    ?          0:27 /vindicia/apach -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+5    99 13871 32745  20   0 1578108 1073364 poll_s S ?          0:25 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+5    99 13877 32745  20   0 1566804 1062496 -   R    ?          0:26 /vindicia/apach -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+4    89 13881 17149  20   0 103480  3928 ep_pol S    ?          0:00 trivial-rewrite -n rewrite -t unix -u
+5    99 14053 32745  20   0 1547388 1044776 fcntl_ S ?          0:23 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+1     0 14057     2  20   0      0     0 worker S    ?          0:00 [kworker/1:2]
+5    99 14071 32745  20   0 1496508 997112 -    R    ?          0:05 /vindicia/apach -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+1     0 14096     2  20   0      0     0 worker S    ?          0:00 [kworker/17:1]
+5    99 14140 32745  20   0 1532180 1031204 fcntl_ S ?          0:08 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+5    99 14256 32745  20   0 1487208 988768 fcntl_ S  ?          0:11 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+4    89 14266 17149  20   0 103624  3964 ep_pol S    ?          0:00 cleanup -z -t unix -u
+4    89 14267 17149  20   0 103684  4260 ep_pol S    ?          0:00 smtp -t unix -u
+4     0 14287 32240  20   0 235928  3620 poll_s S+   pts/0      0:00 sudo python ps_hierarchy.py
+4     0 14288 14287  20   0 136076  4976 pipe_w S+   pts/0      0:00 python ps_hierarchy.py
+4     0 14289 14288  20   0 113120  1200 wait   S+   pts/0      0:00 /bin/sh -c ps -e l > in_file
+4     0 14290 14289  20   0 137376  1272 -      R+   pts/0      0:00 ps -e l
+1     0 14722     2   0 -20      0     0 worker S<   ?          0:00 [kworker/4:1H]
+1     0 15225     2  20   0      0     0 worker S    ?          0:18 [kworker/11:0]
+1     0 15230     2  20   0      0     0 worker S    ?          0:18 [kworker/13:1]
+5     0 17149     1  20   0  93208   252 ep_pol Ss   ?          0:46 /usr/libexec/postfix/master -w
+4    89 17151 17149  20   0 103868   688 ep_pol S    ?          0:32 qmgr -l -t unix -u
+1     0 17351     2   0 -20      0     0 worker S<   ?          0:00 [kworker/5:0H]
+1     0 17680     2   0 -20      0     0 worker S<   ?          0:00 [kworker/8:1H]
+1  2428 18480     1  20   0 168536 22528 poll_s Ss   ?          0:00 SCREEN
+0  2428 18481 18480  20   0 128948   244 n_tty_ Ss+  pts/1      0:00 /bin/bash
+0  1012 18513     1  20   0 128856     4 futex_ Ss   ?          0:00 -/bin/bash
+1  2583 18941     1  20   0 140768     8 poll_s Ss   ?          0:12 SCREEN
+0  2583 18943 18941  20   0 134396     8 n_tty_ Ss+  pts/10     0:00 -bin/tcsh
+1     0 19954     2  20   0      0     0 worker S    ?          0:10 [kworker/19:2]
+5    38 20401     1  20   0  43804   812 poll_s Ss   ?          0:06 /usr/sbin/ntpd -u ntp:ntp -g
+1     0 20584     2  20   0      0     0 worker S    ?          0:08 [kworker/12:0]
+1     0 20829     2   0 -20      0     0 worker S<   ?          0:01 [kworker/7:0H]
+1     0 22115     2  20   0      0     0 worker S    ?          0:00 [kworker/13:2]
+1     0 23833     2  20   0      0     0 worker S    ?          0:00 [kworker/u66:0]
+5     0 24080     1  20   0  13488    24 poll_s S    ?          0:02 /var/ossec/bin/ossec-execd
+5   495 24439     1  20   0   6672   448 hrtime S    ?          0:01 /var/ossec/bin/ossec-agentd
+5     0 24443     1  20   0   4432    20 hrtime S    ?          1:12 /var/ossec/bin/ossec-logcollector
+5     0 24447     1  20   0   4592    52 hrtime S    ?          1:12 /var/ossec/bin/ossec-syscheckd
+1     0 24544     2   0 -20      0     0 worker S<   ?          0:04 [kworker/7:1H]
+1     0 25005     2  20   0      0     0 worker S    ?          0:06 [kworker/22:3]
+0     0 25221     1  20   0 107936     0 inotif S    ?          0:00 tail -f /var/log/maillog
+4     0 25327     1  20   0 126336   408 hrtime Ss   ?          1:08 /usr/sbin/crond -n
+1     0 25384     2  20   0      0     0 worker S    ?          0:05 [kworker/18:2]
+1     0 25410     2  20   0      0     0 worker S    ?          0:02 [kworker/u66:1]
+1     0 25411     2  20   0      0     0 worker S    ?          0:00 [kworker/u65:0]
+1     0 25438     2  20   0      0     0 worker S    ?          0:06 [kworker/14:1]
+1  2419 25778     1  20   0 248232 11496 poll_s Ss   ?          0:38 SCREEN
+0  2419 25779 25778  20   0 129152   680 n_tty_ Ss+  pts/2      0:00 /bin/bash
+0  2419 25811 25778  20   0 128940   764 n_tty_ Ss+  pts/3      0:00 /bin/bash
+1     0 26427     2  20   0      0     0 worker S    ?          0:05 [kworker/20:2]
+1     0 27115     2   0 -20      0     0 worker S<   ?          0:00 [kworker/5:1H]
+1     0 27328     2  20   0      0     0 worker S    ?          0:04 [kworker/16:2]
+0  2583 28197 18941  20   0 134404     8 sigsus Ss   pts/12     0:00 -bin/tcsh
+4     0 28396 28197  20   0 235932     8 poll_s S+   pts/12     0:00 sudo vim -u /home/alice/.vimrc Obj.pm DB.pm CBReports/ReportQueries.pm
+4     0 28397 28396  20   0 153772     8 poll_s S+   pts/12     0:02 vim -u /home/alice/.vimrc Obj.pm DB.pm CBReports/ReportQueries.pm
+4   997 28617     1  20   0 535200  1396 poll_s Ssl  ?          9:46 /usr/lib/polkit-1/polkitd --no-debug
+4     0 28773  1147  20   0 288608  3996 ep_pol S    ?         12:45 /usr/libexec/sssd/sssd_be --domain default --uid 0 --gid 0 --debug-to-files
+1  2011 28871     1  20   0 138352     0 poll_s Ss   ?          0:00 SCREEN
+0  2011 28872 28871  20   0 128816     4 wait   Ss   pts/9      0:00 /bin/bash
+1     0 29924     2  20   0      0     0 worker S    ?          0:03 [kworker/9:0]
+0  2583 30205 18941  20   0 134396     8 sigsus Ss   pts/14     0:00 -bin/tcsh
+0  2011 30696 28872  20   0 143600  2088 poll_s S+   pts/9    190:55 /usr/bin/python /usr/bin/dstat -cdlmps
+1     0 30804     2  20   0      0     0 worker S    ?          0:05 [kworker/1:1]
+1     0 31029     2  20   0      0     0 worker S    ?          0:00 [kworker/0:0]
+1     0 31151     2   0 -20      0     0 worker S<   ?          0:00 [kworker/2:0H]
+0  2583 31308 30205  20   0 216660     4 poll_s S+   pts/14     0:00 vim -
+0  2419 31671 25778  20   0 128912   344 n_tty_ Ss+  pts/4      0:02 /bin/bash
+4     0 32234  1159  20   0 167736    24 poll_s Ss   ?          0:00 sshd: steve [priv]
+5  2011 32239 32234  20   0 167888   268 poll_s S    ?          0:00 sshd: steve@pts/0
+0  2011 32240 32239  20   0 128936  2356 wait   Ss   pts/0      0:00 -bash
+1     0 32520     1  20   0 538264 201072 hrtime S   ?          0:00 /usr/bin/perl /vindicia/util/process/spreadsheet_processor.pl -d
+1     0 32524     1  20   0 729104 355292 hrtime S   ?          0:00 /usr/bin/perl /vindicia/util/process/paymentech_cbupload_processor.pl -d
+1     0 32540     1  20   0 526616 192124 hrtime S   ?          0:47 /usr/bin/perl /vindicia/server/reflectd/reflectd
+1     0 32544     1  20   0 458628 115280 hrtime S   ?          0:05 /usr/bin/perl -w /vindicia/server/soap_stats_processor/solr_stats_processor
+1     0 32548     1  20   0 480112 135180 -     R    ?          1:03 /usr/bin/perl -w /vindicia/server/soap_stats_processor/upload_soap_bodies
+1     0 32552     1  20   0 523180 186128 hrtime S   ?          8:07 /usr/bin/perl -w /vindicia/server/soap_stats_processor/soap_stats_processor
+4     0 32557     1  20   0 776676 378996 poll_s S   ?          0:09 /vindicia/server/mojo/cashbox/api.pl
+5    99 32617 32557  20   0 1160488 747752 ep_pol S  ?          0:40 /vindicia/server/mojo/cashbox/api.pl
+5    99 32618 32557  20   0 1187452 772816 ep_pol S  ?          0:42 /vindicia/server/mojo/cashbox/api.pl
+5    99 32619 32557  20   0 1177476 761628 ep_pol S  ?          0:41 /vindicia/server/mojo/cashbox/api.pl
+5    99 32620 32557  20   0 1148696 737656 ep_pol S  ?          0:42 /vindicia/server/mojo/cashbox/api.pl
+5    99 32621 32557  20   0 1194968 785592 ep_pol S  ?          0:42 /vindicia/server/mojo/cashbox/api.pl
+5    99 32622 32557  20   0 1227640 806412 ep_pol S  ?          0:45 /vindicia/server/mojo/cashbox/api.pl
+5    99 32623 32557  20   0 3050288 2634264 ep_pol S ?          9:38 /vindicia/server/mojo/cashbox/api.pl
+5    99 32624 32557  20   0 1179872 762248 ep_pol S  ?          0:43 /vindicia/server/mojo/cashbox/api.pl
+5    99 32625 32557  20   0 1185132 769852 ep_pol S  ?          0:43 /vindicia/server/mojo/cashbox/api.pl
+5    99 32626 32557  20   0 1218672 797168 ep_pol S  ?          0:43 /vindicia/server/mojo/cashbox/api.pl
+1     0 32743     2   0 -20      0     0 worker S<   ?          0:00 [kworker/2:1H]
+5     0 32745     1  20   0 1343168 886900 poll_s Ss ?          0:20 /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL

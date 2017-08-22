@@ -1,0 +1,428 @@
+  PID  COMMAND
+    1  /usr/lib/systemd/systemd --switched-root --system --deserialize 21
+  702  \_ /usr/lib/systemd/systemd-journald
+  707  \_ /usr/sbin/lvmetad -f
+  724  \_ /usr/lib/systemd/systemd-udevd
+ 1008  \_ /sbin/auditd -n
+ 1030  \_ /usr/sbin/irqbalance --foreground
+ 1033  \_ /usr/sbin/abrtd -d -s
+ 1034  \_ /bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+ 1040  \_ /usr/sbin/rsyslogd -n
+ 1050  \_ /usr/bin/lsmd -d
+ 1055  \_ /usr/bin/python -Es /usr/sbin/tuned -l -P
+ 1075  \_ /usr/bin/abrt-watch-log -F BUG: WARNING: at WARNING: CPU: INFO: possible recursive locking detected ernel BUG at list_del corruption list_add corruption do_IRQ: stack overflow: ear stack overflow (cur: eneral protection fault nable to handle kernel ouble fault: RTNL: assertion failed eek! page_mapcount(page) went negative! adness at NETDEV WATCHDOG ysctl table check failed : nobody cared IRQ handler type mismatch Machine Check Exception: Machine check events logged divide error: bounds: coprocessor segment overrun: invalid TSS: segment not present: invalid opcode: alignment check: stack segment: fpu exception: simd exception: iret exception: /var/log/messages -- /usr/bin/abrt-dump-oops -xtD
+ 1105  \_ /usr/sbin/oddjobd -n -p /var/run/oddjobd.pid -t 300
+ 1112  \_ /usr/sbin/smartd -n -q never
+ 1147  \_ /usr/sbin/sssd -D -f
+ 1196  |   \_ /usr/libexec/sssd/sssd_nss --uid 0 --gid 0 --debug-to-files
+ 1197  |   \_ /usr/libexec/sssd/sssd_pam --uid 0 --gid 0 --debug-to-files
+ 1198  |   \_ /usr/libexec/sssd/sssd_autofs --uid 0 --gid 0 --debug-to-files
+28773  |   \_ /usr/libexec/sssd/sssd_be --domain default --uid 0 --gid 0 --debug-to-files
+ 1159  \_ /usr/sbin/sshd -D
+32234  |   \_ sshd: steve [priv]
+32239  |      \_ sshd: steve@pts/0
+32240  |         \_ -bash
+14287  |            \_ sudo python ps_hierarchy.py
+14288  |               \_ python ps_hierarchy.py
+14289  |                  \_ /bin/sh -c ps -e l > in_file
+14290  |                     \_ ps -e l
+ 1259  \_ /usr/lib/systemd/systemd-logind
+ 1305  \_ /usr/sbin/atd -f
+ 1368  \_ /sbin/agetty --noclear tty1 linux
+ 1369  \_ /sbin/agetty --keep-baud 115200 38400 9600 ttyS0 vt220
+10500  \_ /usr/bin/perl -w ./recurring_test.pl 20
+10511  \_ /usr/bin/perl -w ./recurring_test.pl 20
+12581  \_ /usr/bin/memcached -u memcached -p 11211 -m 8192 -c 8192 -P /var/run/memcached/memcached.pid -t 8 -I 5
+17149  \_ /usr/libexec/postfix/master -w
+10440  |   \_ pickup -l -t unix -u
+13881  |   \_ trivial-rewrite -n rewrite -t unix -u
+14266  |   \_ cleanup -z -t unix -u
+14267  |   \_ smtp -t unix -u
+17151  |   \_ qmgr -l -t unix -u
+18480  \_ SCREEN
+18481  |   \_ /bin/bash
+18513  \_ -/bin/bash
+18941  \_ SCREEN
+ 7795  |   \_ -bin/tcsh
+ 7852  |   |   \_ rlwrap /usr/local/oracle/product/11.2.0/client_1/bin/sqlplus vindicia/VAE9EB0DIBFM19427TT510HLRA8L5D@//10.80.40.109/vindicia
+ 7853  |   |      \_ /usr/local/oracle/product/11.2.0/client_1/bin/sqlplus
+18943  |   \_ -bin/tcsh
+28197  |   \_ -bin/tcsh
+28396  |   |   \_ sudo vim -u /home/alice/.vimrc Obj.pm DB.pm CBReports/ReportQueries.pm
+28397  |   |      \_ vim -u /home/alice/.vimrc Obj.pm DB.pm CBReports/ReportQueries.pm
+30205  |   \_ -bin/tcsh
+31308  |      \_ vim -
+20401  \_ /usr/sbin/ntpd -u ntp:ntp -g
+24080  \_ /var/ossec/bin/ossec-execd
+24439  \_ /var/ossec/bin/ossec-agentd
+24443  \_ /var/ossec/bin/ossec-logcollector
+24447  \_ /var/ossec/bin/ossec-syscheckd
+25221  \_ tail -f /var/log/maillog
+25327  \_ /usr/sbin/crond -n
+25778  \_ SCREEN
+ 8177  |   \_ /bin/bash
+25779  |   \_ /bin/bash
+25811  |   \_ /bin/bash
+31671  |   \_ /bin/bash
+28617  \_ /usr/lib/polkit-1/polkitd --no-debug
+28871  \_ SCREEN
+28872  |   \_ /bin/bash
+30696  |      \_ /usr/bin/python /usr/bin/dstat -cdlmps
+32520  \_ /usr/bin/perl /vindicia/util/process/spreadsheet_processor.pl -d
+32524  \_ /usr/bin/perl /vindicia/util/process/paymentech_cbupload_processor.pl -d
+32540  \_ /usr/bin/perl /vindicia/server/reflectd/reflectd
+32544  \_ /usr/bin/perl -w /vindicia/server/soap_stats_processor/solr_stats_processor
+32548  \_ /usr/bin/perl -w /vindicia/server/soap_stats_processor/upload_soap_bodies
+32552  \_ /usr/bin/perl -w /vindicia/server/soap_stats_processor/soap_stats_processor
+32557  \_ /vindicia/server/mojo/cashbox/api.pl
+32617  |   \_ /vindicia/server/mojo/cashbox/api.pl
+32618  |   \_ /vindicia/server/mojo/cashbox/api.pl
+32619  |   \_ /vindicia/server/mojo/cashbox/api.pl
+32620  |   \_ /vindicia/server/mojo/cashbox/api.pl
+32621  |   \_ /vindicia/server/mojo/cashbox/api.pl
+32622  |   \_ /vindicia/server/mojo/cashbox/api.pl
+32623  |   \_ /vindicia/server/mojo/cashbox/api.pl
+32624  |   \_ /vindicia/server/mojo/cashbox/api.pl
+32625  |   \_ /vindicia/server/mojo/cashbox/api.pl
+32626  |   \_ /vindicia/server/mojo/cashbox/api.pl
+32745  \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+11330     \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+12438     \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+12735     \_ /vindicia/apach -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+12746     \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+13136     \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+13141     \_ /vindicia/apach -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+13439     \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+13442     \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+13488     \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+13496     \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+13682     \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+13857     \_ /vindicia/apach -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+13863     \_ /vindicia/apach -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+13871     \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+13877     \_ /vindicia/apach -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+14053     \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+14071     \_ /vindicia/apach -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+14140     \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+14256     \_ /usr/sbin/httpd -f /vindicia/apache/conf/httpd.conf -d /vindicia/apache -C ErrorLog /var/vindicia/logs/apache/error.log -D SSL
+    2  [kthreadd]
+    3  \_ [ksoftirqd/0]
+    5  \_ [kworker/0:0H]
+    8  \_ [migration/0]
+    9  \_ [rcu_bh]
+   10  \_ [rcuob/0]
+   11  \_ [rcuob/1]
+   12  \_ [rcuob/2]
+   13  \_ [rcuob/3]
+   14  \_ [rcuob/4]
+   15  \_ [rcuob/5]
+   16  \_ [rcuob/6]
+   17  \_ [rcuob/7]
+   18  \_ [rcuob/8]
+   19  \_ [rcuob/9]
+   20  \_ [rcuob/10]
+   21  \_ [rcuob/11]
+   22  \_ [rcuob/12]
+   23  \_ [rcuob/13]
+   24  \_ [rcuob/14]
+   25  \_ [rcuob/15]
+   26  \_ [rcuob/16]
+   27  \_ [rcuob/17]
+   28  \_ [rcuob/18]
+   29  \_ [rcuob/19]
+   30  \_ [rcuob/20]
+   31  \_ [rcuob/21]
+   32  \_ [rcuob/22]
+   33  \_ [rcuob/23]
+   34  \_ [rcuob/24]
+   35  \_ [rcuob/25]
+   36  \_ [rcuob/26]
+   37  \_ [rcuob/27]
+   38  \_ [rcuob/28]
+   39  \_ [rcuob/29]
+   40  \_ [rcuob/30]
+   41  \_ [rcuob/31]
+   42  \_  [rcu_sched]
+   43  \_ [rcuos/0]
+   44  \_ [rcuos/1]
+   45  \_ [rcuos/2]
+   46  \_ [rcuos/3]
+   47  \_ [rcuos/4]
+   48  \_ [rcuos/5]
+   49  \_ [rcuos/6]
+   50  \_ [rcuos/7]
+   51  \_ [rcuos/8]
+   52  \_ [rcuos/9]
+   53  \_ [rcuos/10]
+   54  \_ [rcuos/11]
+   55  \_ [rcuos/12]
+   56  \_ [rcuos/13]
+   57  \_ [rcuos/14]
+   58  \_ [rcuos/15]
+   59  \_ [rcuos/16]
+   60  \_ [rcuos/17]
+   61  \_ [rcuos/18]
+   62  \_ [rcuos/19]
+   63  \_ [rcuos/20]
+   64  \_ [rcuos/21]
+   65  \_ [rcuos/22]
+   66  \_ [rcuos/23]
+   67  \_ [rcuos/24]
+   68  \_ [rcuos/25]
+   69  \_ [rcuos/26]
+   70  \_ [rcuos/27]
+   71  \_ [rcuos/28]
+   72  \_ [rcuos/29]
+   73  \_ [rcuos/30]
+   74  \_ [rcuos/31]
+   75  \_ [watchdog/0]
+   76  \_ [watchdog/1]
+   77  \_ [migration/1]
+   78  \_ [ksoftirqd/1]
+   80  \_ [kworker/1:0H]
+   82  \_ [watchdog/2]
+   83  \_ [migration/2]
+   84  \_ [ksoftirqd/2]
+   87  \_ [watchdog/3]
+   88  \_ [migration/3]
+   89  \_ [ksoftirqd/3]
+   91  \_ [kworker/3:0H]
+   92  \_ [watchdog/4]
+   93  \_ [migration/4]
+   94  \_ [ksoftirqd/4]
+   96  \_ [kworker/4:0H]
+   97  \_ [watchdog/5]
+   98  \_ [migration/5]
+   99  \_ [ksoftirqd/5]
+  102  \_ [watchdog/6]
+  103  \_ [migration/6]
+  104  \_ [ksoftirqd/6]
+  106  \_ [kworker/6:0H]
+  107  \_ [watchdog/7]
+  108  \_ [migration/7]
+  109  \_ [ksoftirqd/7]
+  112  \_ [watchdog/8]
+  113  \_ [migration/8]
+  114  \_ [ksoftirqd/8]
+  116  \_ [kworker/8:0H]
+  117  \_ [watchdog/9]
+  118  \_ [migration/9]
+  119  \_ [ksoftirqd/9]
+  121  \_ [kworker/9:0H]
+  122  \_ [watchdog/10]
+  123  \_ [migration/10]
+  124  \_ [ksoftirqd/10]
+  126  \_ [kworker/10:0H]
+  127  \_ [watchdog/11]
+  128  \_ [migration/11]
+  129  \_ [ksoftirqd/11]
+  131  \_ [kworker/11:0H]
+  132  \_ [watchdog/12]
+  133  \_ [migration/12]
+  134  \_ [ksoftirqd/12]
+  136  \_ [kworker/12:0H]
+  137  \_ [watchdog/13]
+  138  \_ [migration/13]
+  139  \_ [ksoftirqd/13]
+  141  \_ [kworker/13:0H]
+  142  \_ [watchdog/14]
+  143  \_ [migration/14]
+  144  \_ [ksoftirqd/14]
+  146  \_ [kworker/14:0H]
+  147  \_ [watchdog/15]
+  148  \_ [migration/15]
+  149  \_ [ksoftirqd/15]
+  151  \_ [kworker/15:0H]
+  152  \_ [watchdog/16]
+  153  \_ [migration/16]
+  154  \_ [ksoftirqd/16]
+  156  \_ [kworker/16:0H]
+  157  \_ [watchdog/17]
+  158  \_ [migration/17]
+  159  \_ [ksoftirqd/17]
+  161  \_ [kworker/17:0H]
+  162  \_ [watchdog/18]
+  163  \_ [migration/18]
+  164  \_ [ksoftirqd/18]
+  166  \_ [kworker/18:0H]
+  167  \_ [watchdog/19]
+  168  \_ [migration/19]
+  169  \_ [ksoftirqd/19]
+  171  \_ [kworker/19:0H]
+  172  \_ [watchdog/20]
+  173  \_ [migration/20]
+  174  \_ [ksoftirqd/20]
+  176  \_ [kworker/20:0H]
+  177  \_ [watchdog/21]
+  178  \_ [migration/21]
+  179  \_ [ksoftirqd/21]
+  181  \_ [kworker/21:0H]
+  182  \_ [watchdog/22]
+  183  \_ [migration/22]
+  184  \_ [ksoftirqd/22]
+  186  \_ [kworker/22:0H]
+  187  \_ [watchdog/23]
+  188  \_ [migration/23]
+  189  \_ [ksoftirqd/23]
+  191  \_ [kworker/23:0H]
+  192  \_ [khelper]
+  193  \_ [kdevtmpfs]
+  194  \_ [netns]
+  195  \_ [perf]
+  196  \_ [writeback]
+  197  \_ [kintegrityd]
+  198  \_ [bioset]
+  199  \_ [kblockd]
+  200  \_ [md]
+  205  \_ [khungtaskd]
+  206  \_ [kswapd0]
+  207  \_ [kswapd1]
+  208  \_ [ksmd]
+  209  \_ [khugepaged]
+  210  \_ [fsnotify_mark]
+  211  \_ [crypto]
+  219  \_ [kthrotld]
+  221  \_ [kmpath_rdacd]
+  223  \_ [kpsmoused]
+  225  \_ [ipv6_addrconf]
+  245  \_ [deferwq]
+  298  \_ [kauditd]
+  487  \_ [scsi_eh_0]
+  488  \_ [scsi_tmf_0]
+  500  \_ [events_power_ef]
+  501  \_ [ttm_swap]
+  590  \_ [kdmflush]
+  591  \_ [bioset]
+  600  \_ [kdmflush]
+  601  \_ [bioset]
+  616  \_ [xfsalloc]
+  617  \_ [xfs_mru_cache]
+  618  \_ [xfs-buf/dm-0]
+  619  \_ [xfs-data/dm-0]
+  620  \_ [xfs-conv/dm-0]
+  621  \_ [xfs-cil/dm-0]
+  622  \_ [xfsaild/dm-0]
+  727  \_ [kworker/9:1H]
+  809  \_ [edac-poller]
+  810  \_ [kipmi0]
+  841  \_ [kvm-irqfd-clean]
+  848  \_ [iscsi_eh]
+  860  \_ [scsi_eh_1]
+  861  \_ [scsi_tmf_1]
+  867  \_ [xfs-buf/sda1]
+  868  \_ [xfs-data/sda1]
+  869  \_ [xfs-conv/sda1]
+  870  \_ [xfs-cil/sda1]
+  874  \_ [xfsaild/sda1]
+  877  \_ [kdmflush]
+  878  \_ [bioset]
+  885  \_ [xfs-buf/dm-2]
+  886  \_ [xfs-data/dm-2]
+  887  \_ [xfs-conv/dm-2]
+  888  \_ [xfs-cil/dm-2]
+  889  \_ [xfsaild/dm-2]
+  891  \_ [beiscsi_01_wq]
+  892  \_ [scsi_wq_1]
+  893  \_ [scsi_eh_2]
+  894  \_ [scsi_tmf_2]
+  895  \_ [beiscsi_02_wq]
+  896  \_ [scsi_wq_2]
+  914  \_ [ib_addr]
+  928  \_ [ib_mcast]
+  934  \_ [iw_cm_wq]
+  940  \_ [ib_cm]
+  944  \_ [rdma_cm]
+  968  \_ [ipoib_flush]
+  974  \_ [srp_remove]
+  978  \_ [target_completi]
+  979  \_ [tmr-rd_mcp]
+  980  \_ [xcopy_wq]
+  989  \_ [kworker/u67:0]
+  990  \_ [kworker/u68:0]
+  991  \_ [kworker/u69:0]
+  996  \_ [rpciod]
+ 1144  \_ [kworker/0:1H]
+ 1579  \_ [kworker/15:1]
+ 1601  \_ [kworker/6:1H]
+ 2544  \_ [kworker/14:1H]
+ 2545  \_ [kworker/10:1H]
+ 2546  \_ [kworker/20:1H]
+ 2547  \_ [kworker/17:1H]
+ 2591  \_ [kworker/12:1H]
+ 2595  \_ [kworker/16:1H]
+ 2596  \_ [kworker/21:1H]
+ 2597  \_ [kworker/15:1H]
+ 2598  \_ [kworker/1:1H]
+ 2599  \_ [kworker/13:1H]
+ 2884  \_ [kworker/11:1H]
+ 2971  \_ [kworker/19:1H]
+ 3163  \_ [kworker/22:1H]
+ 3182  \_ [kworker/23:1H]
+ 3223  \_ [kworker/3:1H]
+ 3293  \_ [kworker/2:1]
+ 3567  \_ [kworker/5:1]
+ 3816  \_ [kworker/18:1H]
+ 4111  \_ [kworker/6:1]
+ 4209  \_ [kworker/u64:1]
+ 4266  \_ [kworker/19:1]
+ 4828  \_ [kworker/11:1]
+ 5083  \_ [kworker/u64:0]
+ 5166  \_ [kworker/7:1]
+ 5622  \_ [kworker/18:0]
+ 5638  \_ [kworker/17:0]
+ 6184  \_ [kworker/10:0]
+ 6868  \_ [kworker/3:2]
+ 7358  \_ [kworker/16:1]
+ 8036  \_ [kworker/4:2]
+ 8451  \_ [kworker/21:1]
+ 9125  \_ [kworker/8:0]
+ 9163  \_ [kworker/6:0]
+ 9748  \_ [kworker/12:2]
+10240  \_ [kworker/23:1]
+10379  \_ [kworker/20:0]
+10625  \_ [kworker/21:2]
+10675  \_ [kworker/7:0]
+10875  \_ [kworker/5:0]
+11554  \_ [kworker/17:2]
+11706  \_ [kworker/3:0]
+11750  \_ [kworker/8:2]
+12280  \_ [kworker/1:0]
+12547  \_ [kworker/14:0]
+12551  \_ [kworker/23:2]
+12553  \_ [kworker/2:0]
+12555  \_ [kworker/10:1]
+12738  \_ [kworker/15:0]
+12918  \_ [kworker/9:1]
+12919  \_ [kworker/0:2]
+12970  \_ [kworker/22:1]
+13129  \_ [kworker/4:0]
+13338  \_ [kworker/19:0]
+13495  \_ [kworker/3:1]
+13631  \_ [kworker/u65:1]
+13854  \_ [kworker/2:2]
+14057  \_ [kworker/1:2]
+14096  \_ [kworker/17:1]
+14722  \_ [kworker/4:1H]
+15225  \_ [kworker/11:0]
+15230  \_ [kworker/13:1]
+17351  \_ [kworker/5:0H]
+17680  \_ [kworker/8:1H]
+19954  \_ [kworker/19:2]
+20584  \_ [kworker/12:0]
+20829  \_ [kworker/7:0H]
+22115  \_ [kworker/13:2]
+23833  \_ [kworker/u66:0]
+24544  \_ [kworker/7:1H]
+25005  \_ [kworker/22:3]
+25384  \_ [kworker/18:2]
+25410  \_ [kworker/u66:1]
+25411  \_ [kworker/u65:0]
+25438  \_ [kworker/14:1]
+26427  \_ [kworker/20:2]
+27115  \_ [kworker/5:1H]
+27328  \_ [kworker/16:2]
+29924  \_ [kworker/9:0]
+30804  \_ [kworker/1:1]
+31029  \_ [kworker/0:0]
+31151  \_ [kworker/2:0H]
+32743  \_ [kworker/2:1H]
