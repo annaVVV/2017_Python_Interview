@@ -1,13 +1,15 @@
-import sys, os, subprocess
+import subprocess
 
 class Node:
-    def __init__(self, command, pid ,parent=None):
+    def __init__(self, command, pid, ppid):
         self.name = command
         self.pid = pid
-        self.parent = parent
+        self.ppid = ppid
         self.children = []
-        if parent:
-            self.parent.children.append(self)
+        # if parent:
+        #     self.parent.children.append(self)
+    def add_child(self, child):
+        self.children.append(child)
 
     def count_children(self):
         return len(self.children)
@@ -36,6 +38,7 @@ def walk(node, pref):
     print "{: >5} ".format(c.pid), pref + '\_', c.name
     walk(c, pref + '   ' )
 
+
 def cmd_exec(cmd):
     p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
     output, err = p.communicate()
@@ -50,6 +53,8 @@ def cmd_exec(cmd):
 #  return: dictionary with keys as PID , value as Node
 def get_dict(file_name):
     file = open(file_name)
+    # str = file.read()
+    # data = str.split('\n')
     data, rows = [], []
     for row in file:
         data.append(row)
@@ -62,15 +67,16 @@ def get_dict(file_name):
         row = {keys[2]: o1[2], keys[3]: o1[3], keys[-1]: o[ind_command:]}
         rows.append(row)
 
-    # Sort by parent
-    rows.sort(key=lambda x: int(x[keys[3]]))
-
     # Create hierarchy
     nodes = {}
-    nodes['0'] = Node('root', '0')
-
+    nodes['0'] = Node('root', '0', ppid = None)
+    # Create nodes
     for r in rows:
-        nodes[r['PID']] = Node(r['COMMAND'], r['PID'], nodes[r['PPID']] )
+        nodes[r['PID']] = Node(r['COMMAND'], r['PID'], r['PPID'] )
+    # Add children to parents
+    for r in rows:
+        node = nodes[r['PID']]
+        nodes[node.ppid].add_child(node)
 
     return nodes
 
