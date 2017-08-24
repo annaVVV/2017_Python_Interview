@@ -8,7 +8,7 @@ import inspect
 user = "annaVVV"
 password = 'password'
 headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
-#r = requests.get('https://api.github.com/users/annaVVV', auth=('annaVVV', '12345678a'))
+#r = requests.get('https://api.github.com/users/annaVVV', auth=('annaVVV', 'xxxx'))
 uri1 = 'https://api.github.com/users/' + user
 server = "https://api.github.com"
 url = server + "/gists"
