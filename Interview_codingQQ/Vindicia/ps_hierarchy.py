@@ -14,7 +14,7 @@ class Node:
         return len(self.children)
 
     def print_node(self):
-        print "{: >5} ".format(self.pid), self.name
+        print '%5s '% (self.pid), self.name
 
     def get_children_pid(self):
         pids = []
@@ -31,10 +31,10 @@ def walk(node, pref):
     if count_chilren > 1:
         line = 1
     for c in node.children[:-1]:
-        print "{: >5} ".format(c.pid), pref + '\_', c.name
+        print '%5s '% (c.pid), pref + '\_', c.name
         walk(c, pref + '|'*line + '   ' )
     c = node.children[-1]
-    print "{: >5} ".format(c.pid), pref + '\_', c.name
+    print '%5s '% (c.pid), pref + '\_', c.name
     walk(c, pref + '   ' )
 
 
