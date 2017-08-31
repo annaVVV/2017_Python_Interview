@@ -1,4 +1,4 @@
 
 TODO
 ------------
-as discussed with manager removed all context
+as discussed with manager removed all context, NO OFFER
