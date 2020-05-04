@@ -2,7 +2,6 @@ import requests
 import json
 
 def main():
-
     # Create a request
     method = 'GET'
     URL = 'https://thevirustracker.com/free-api?countryTimeline=US'
