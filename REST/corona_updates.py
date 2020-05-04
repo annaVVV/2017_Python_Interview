@@ -1,5 +1,12 @@
 import requests
 import json
+############################################################################################
+# Created example how to get Covid-19 updates for US by date
+# Source: 
+#   https://documenter.getpostman.com/view/8854915/SzS7R74n?version=latest#08adba6b-8533-42c2-a30f-bdb00eac5925
+# Used: 
+#   curl --location --request GET 'https://thevirustracker.com/free-api?countryTimeline=US'
+############################################################################################
 
 def main():
     # Create a request
