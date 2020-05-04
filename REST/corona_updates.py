@@ -1,12 +1,13 @@
-import requests
-import json
 ############################################################################################
 # Created example how to get Covid-19 updates for US by date
 # Source: 
 #   https://documenter.getpostman.com/view/8854915/SzS7R74n?version=latest#08adba6b-8533-42c2-a30f-bdb00eac5925
-# Used: 
+# Used: GET Country Timeline API
 #   curl --location --request GET 'https://thevirustracker.com/free-api?countryTimeline=US'
 ############################################################################################
+import requests
+import json
+import datetime
 
 def main():
     # Create a request
@@ -15,9 +16,9 @@ def main():
     headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
     r = requests.request(method='GET', url=URL, headers=headers)
     js_resp = json.loads(r.content)
-    date = '5/03/20'
-    update = js_resp['timelineitems'][0][date]
-    
+    # Get today date in format like '05/03/20'
+    date = datetime.datetime.now().strftime("%m/%d/%y")
+    update = js_resp['timelineitems'][0][date]    
     # display data
     print(update)
     
