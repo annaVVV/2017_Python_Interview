@@ -14,13 +14,16 @@ def main():
     method = 'GET'
     URL = 'https://thevirustracker.com/free-api?countryTimeline=US'
     headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
-    r = requests.request(method='GET', url=URL, headers=headers)
-    js_resp = json.loads(r.content)
-    # Get today date in format like '05/03/20'
-    date = datetime.datetime.now().strftime("%m/%d/%y")
-    update = js_resp['timelineitems'][0][date]    
-    # display data
-    print(update)
+    r = requests.request(method=method, url=URL, headers=headers)
+    status = resp.status_code
+    print('Response Status Code:', status)
+    if status== 200:
+        js_resp = json.loads(r.content)
+        # Get today date in format like '05/03/20'
+        date = datetime.datetime.now().strftime("%m/%d/%y")
+        update = js_resp['timelineitems'][0][date]    
+        # display data
+        print(update)
     
 if __name__ == "__main__":
     main()   
